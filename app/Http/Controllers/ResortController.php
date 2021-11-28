@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 // use App\BookShop;
 
 use Illuminate\Support\Facades\DB;          //myself
+use Illuminate\Support\Facades\Config;
 
 class ResortController extends Controller
 {
@@ -85,4 +86,45 @@ class ResortController extends Controller
     }
 
 
+
+
+    public function getBranchesCode() {
+        $codes = DB::table('chi_nhanh')->select('ma_chi_nhanh')->get();
+        return $codes;
+    }
+
+    public function statistic(Request $request) {
+        $branch = "'".$request->input('branch')."'";
+        $year = $request->input('year');
+
+        return DB::select("CALL ThongKeLuotKhach(".$branch.", ".$year.")");
+
+        
+    }
+
+    // public function login(Request $request) {
+    //     if (!$request->session()->has('data')) {
+    //         $username = $request->input('username');
+    //         $password = $request->input('password');
+    //         Config::set('database.connections.mysql.database', 'resort');
+    //         Config::set('database.connections.mysql.username', $username);
+    //         Config::set('database.connections.mysql.password', $password);
+    //         try {
+    //             DB::connection()->getPdo();
+    //             $request->session()->put('data', $request->input());
+    //             return redirect('/admin');
+    //         }
+    //         catch (\Exception $e) {
+    //             // die("Could not connect to the database.  Please check your configuration. error:" . $e );
+    //             return redirect('/');
+    //         }
+    //     }
+    //     else return redirect('/admin');
+    // }
+
+    public function logout(Request $request) {
+
+        $request->session()->forget('data');
+        return redirect('/');
+    }
 }

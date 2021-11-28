@@ -54,3 +54,5 @@ Route::delete('loaiPhong/{id}', 'ResortController@destroy');  // xóa loại ph�
 Route::get('khachHangAll', 'ResortController@indexKhachHang');  // lấy tất cả khách hàng
 Route::get('khachHang/{id}', 'ResortController@showKhachHang');   // lấy khách hàng theo id
 Route::get('maDatPhong/{id}', 'ResortController@showMaDatPhong');   // lấy mã đặt phòng theo ID khách hàng
+
+// Route::get('thongke', 'ResortController@statistic');
