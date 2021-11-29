@@ -1,12 +1,12 @@
 <template>
     <div>
-        <div class="header-don-dat-phong">
+        <div  class="header-don-dat-phong">
             ĐƠN ĐẶT PHÒNG CỦA KHÁCH HÀNG {{ khachHangID }}
         </div>
 
         <table class="table table-striped list-don">
             <thead>
-                <tr>
+                <tr style="background-color: rgb(8 66 126); color: white">
                     <th class="col-2">Mã đặt phòng</th>
                     <th class="col-2">Ngày giờ đặt</th>
                     <th class="col-1">Số khách</th>
