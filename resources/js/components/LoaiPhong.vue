@@ -17,7 +17,7 @@
         <div class="button-below">
             <router-link :to="{ name: 'themLoaiPhong' }">
                 <button
-                    style="background-color: #0084b4"
+                    style="background-color: rgb(8 66 126)"
                     type="button"
                     class="btn btn-primary change-password"
                 >

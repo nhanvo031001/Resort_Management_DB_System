@@ -16,7 +16,7 @@
 
     <table class="table table-striped list-book w-75">
             <thead>
-                <tr style="background-color: #0084b4; color: white;">
+                <tr style="background-color: rgb(8 66 126); color: white;">
                     <th></th>
                     <th class="col-6">Tháng</th>
                     <th class="col-6">Tổng số lượt khách</th>

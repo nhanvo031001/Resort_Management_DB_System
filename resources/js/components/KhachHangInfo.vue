@@ -4,8 +4,9 @@
             THÔNG TIN KHÁCH HÀNG {{ khachHangID }}
         </div>
 
+        <!-- style="background-color: #0084b4; color: white" -->
         <div
-            style="background-color: #0084b4; color: white"
+            
             class="container filling-all-info"
         >
             <div class="row one-row-field">
@@ -227,7 +228,8 @@ export default {
 
 .done {
     /* margin-left: 290px; */
-    background-color: #0084b4;
+    /* background-color: #0084b4; */
+    background-color: rgb(8 66 126);
     border: none;
     color: white;
     font-size: 20px;

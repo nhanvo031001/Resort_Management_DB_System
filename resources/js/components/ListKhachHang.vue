@@ -37,7 +37,7 @@
 
         <table class="table table-striped list-book">
             <thead>
-                <tr style="background-color: #0084b4; color: white">
+                <tr style="background-color: rgb(8 66 126); color: white">
                     <th class="col-1">Mã khách hàng</th>
                     <th class="col-1">CCCD/CMND</th>
                     <th class="col-2">Họ tên</th>
@@ -65,20 +65,20 @@
                     <td>{{ item.diem }}</td>
                     <td>{{ item.loai }}</td>
                     <td>
-                        <!-- <router-link :to="{name: 'khachHangInfo', params: {khachHangID: item.ma_khach_hang}}"> 
-                            <button type="button" class="btn btn-primary xem-thong-tin">Xem thông tin</button>
-                        </router-link> -->
 
-                        <router-link
-                            :to="{
-                                name: 'donDatPhong',
-                                params: { khachHangID: item.ma_khach_hang }
-                            }"
-                        >
-                            <button type="button" class="btn btn-success">
-                                Xem đơn đặt phòng
-                            </button>
-                        </router-link>
+                        <div class="xem-thong-tin">
+                            <router-link :to="{name: 'khachHangInfo', params: {khachHangID: item.ma_khach_hang}}"> 
+                                <button type="button" class="btn btn-primary">Xem thông tin</button>
+                            </router-link>
+                        </div>
+
+                        <div class="xem-don-dat-phong">
+                            <router-link :to="{name: 'donDatPhong', params: { khachHangID: item.ma_khach_hang } }">
+                                <button type="button" class="btn btn-success">
+                                    Xem đơn đặt phòng
+                                </button>
+                            </router-link>
+                        </div>
                     </td>
                 </tr>
             </tbody>
@@ -122,5 +122,14 @@ export default {
 .table th,
 .table td {
     vertical-align: middle;
+}
+
+.xem-thong-tin {
+    margin-left: -28px;
+}
+
+.xem-don-dat-phong {
+    margin-top: 7px;
+    margin-right: 5px;
 }
 </style>

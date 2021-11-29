@@ -93,7 +93,8 @@ export default {
 
 .done {
     /* margin-left: 290px; */
-    background-color: #0084b4;
+    /* background-color: #0084b4; */
+    background-color: rgb(8 66 126);
     border: none;
     color: white;
     font-size: 20px;

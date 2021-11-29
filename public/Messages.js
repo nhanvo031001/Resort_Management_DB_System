@@ -61,6 +61,20 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 // import updateBook from './UpdateBook.vue'
 // import bookInfo from './BookInfo.vue'
 
@@ -68,7 +82,7 @@ __webpack_require__.r(__webpack_exports__);
   data: function data() {
     return {};
   },
-  props: ['items', 'resultQuery'],
+  props: ["items", "resultQuery"],
   components: {
     // updateBook,
     // bookInfo,
@@ -78,11 +92,11 @@ __webpack_require__.r(__webpack_exports__);
     removeRoom: function removeRoom(id) {
       var _this = this;
 
-      axios["delete"]('/api/loaiPhong/' + id).then(function (response) {
+      axios["delete"]("/api/loaiPhong/" + id).then(function (response) {
         console.log("Xóa phòng thành công");
 
         if (response.status == 200) {
-          _this.$emit('orderchanged');
+          _this.$emit("orderchanged");
         }
       })["catch"](function (error) {
         console.log(error);
@@ -133,6 +147,17 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 
@@ -154,7 +179,7 @@ __webpack_require__.r(__webpack_exports__);
     getList: function getList() {
       var _this = this;
 
-      axios.get('/api/loaiPhongAll').then(function (response) {
+      axios.get("/api/loaiPhongAll").then(function (response) {
         _this.items = response.data;
         console.log(_this.items);
       })["catch"](function (error) {
@@ -166,7 +191,7 @@ __webpack_require__.r(__webpack_exports__);
 
       if (this.searchQuery) {
         return this.items.filter(function (item) {
-          return _this2.searchQuery.toLowerCase().split(' ').every(function (v) {
+          return _this2.searchQuery.toLowerCase().split(" ").every(function (v) {
             return item.ten_loai_phong.toLowerCase().includes(v);
           });
         });
@@ -188,6 +213,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+//
 //
 //
 //
@@ -339,7 +365,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\n.side-btn-new {\r\n    /* border: none;\r\n    padding: 16px 0px;\r\n    cursor: pointer;\r\n    font-size: 16px;\r\n    font-weight: 500;\r\n    color: white;\r\n    background-color: transparent; */\n}\n.side-btn-new:focus {\r\n    outline: none;\n}\n.side-btn-new.active {\n}\r\n\r\n", ""]);
+exports.push([module.i, "\n.side-btn-new {\r\n    /* border: none;\r\n    padding: 16px 0px;\r\n    cursor: pointer;\r\n    font-size: 16px;\r\n    font-weight: 500;\r\n    color: white;\r\n    background-color: transparent; */\n}\n.side-btn-new:focus {\r\n    outline: none;\n}\n.side-btn-new.active {\n}\n.table th,\r\n.table td {\r\n    padding: 0.75rem;\r\n    vertical-align: middle;\r\n    border-top: 1px solid #dee2e6;\n}\r\n", ""]);
 
 // exports
 
@@ -359,7 +385,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\n.header-additems {\r\n    margin-top: 30px;\r\n    font-weight: bold;\r\n    font-size: 30px;\n}\n.select-language {\r\n    width: 210px;\r\n    height: 30px;\r\n    border: 2px solid #D8DBE0;\r\n    border-radius: 3px;\n}\n.select-category {\r\n    width: 684px;\r\n    height: 30px;\r\n    border: 2px solid #D8DBE0;\r\n    border-radius: 3px;\n}\n.filling-all-info {\r\n    margin-top: 40px;\n}\n.one-row-field {\r\n    margin-top: 15px;\n}\n.row-input {\r\n    border: 2px solid #D8DBE0;\r\n    border-radius: 3px;\n}\n.field-name-left {\r\n    padding-left: 115px;\r\n    color: #0084B4;\r\n    font-size: 18px;\r\n    font-weight: bold;\n}\n.field-name-right {\r\n    color: #0084B4;\r\n    font-size: 18px;\r\n    font-weight: bold;\r\n    padding-left: 0px;\n}\n.red-star {\r\n    color: red;\n}\n.field-right {\r\n    padding-left: 12px;\n}\n.text-area {\r\n    margin-left: 3px;\n}\n.button-below {\r\n    margin-top: 20px;\r\n    margin-bottom: 30px;\r\n    width: 300px;\n}\n.cancle {\r\n    background-color: #EEEEEE;\r\n    border: none ;\r\n    border-radius: 5px;\r\n    color: #616161;\r\n    font-size: 20px;\r\n    padding: 0.25rem 1.5rem;\r\n    margin-right: 30px;\n}\n.cancle:hover {\r\n    background-color: #d0d6d6;\n}\n.cancle:focus {\r\n    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);\n}\n.addbook {\r\n    /* margin-left: 290px; */\r\n    background-color: #00ACED;\r\n    border: none ;\r\n    color: white;\r\n    font-size: 20px;\r\n    padding: 0.25rem 1.5rem;\r\n    border-radius: 5px;\r\n    margin-right: 140px;\n}\n.addbook:hover {\r\n    background-color: #0084B4;\n}\n.addbook:focus {\r\n    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);\n}\n.input-group {\r\n    width: 83%;\n}\n.custom-file-label {\r\n    border: 2px solid #D8DBE0;\r\n    border-radius: 3px;\n}\n#custom-file-label {\r\n    border: 2px solid #D8DBE0;\r\n    border-radius: 3px;\n}\n.custom-file-input {\r\n    opacity: 1;\r\n    padding-top: 3px;\r\n    width: 600px;\n}\n#upload-button {\r\n    border-radius: 3px;\n}\r\n\r\n\r\n\r\n\r\n/* danh sach loai phong */\n.search {\r\n    margin-top: 10px;\n}\n.search-icon {\n}\n.search-typing {\r\n    border: 2px solid #D8DBE0;\r\n    border-radius: 3px;\r\n    text-indent: 30px;\r\n    /* background: url(../assets/hcmut1.png) no-repeat;\r\n    background-size: 10px 10px; */\r\n    background: url(" + escape(__webpack_require__(/*! ../../../public/images/warehouse/search-icon.png */ "./public/images/warehouse/search-icon.png")) + ") no-repeat scroll 5px 5px; \r\n    background-size: 15px 15px;\n}\n::-moz-placeholder {\r\n    color: rgb(196, 189, 189);\n}\n:-ms-input-placeholder {\r\n    color: rgb(196, 189, 189);\n}\n::placeholder {\r\n    color: rgb(196, 189, 189);\n}\r\n\r\n\r\n", ""]);
+exports.push([module.i, "\n.header-additems {\r\n    margin-top: 30px;\r\n    font-weight: bold;\r\n    font-size: 30px;\n}\n.select-language {\r\n    width: 210px;\r\n    height: 30px;\r\n    border: 2px solid #d8dbe0;\r\n    border-radius: 3px;\n}\n.select-category {\r\n    width: 684px;\r\n    height: 30px;\r\n    border: 2px solid #d8dbe0;\r\n    border-radius: 3px;\n}\n.filling-all-info {\r\n    margin-top: 40px;\n}\n.one-row-field {\r\n    margin-top: 15px;\n}\n.row-input {\r\n    border: 2px solid #d8dbe0;\r\n    border-radius: 3px;\n}\n.field-name-left {\r\n    /* padding-left: 115px; */\r\n    color: #0084b4;\r\n    font-size: 18px;\r\n    font-weight: bold;\n}\n.field-name-right {\r\n    color: #0084b4;\r\n    font-size: 18px;\r\n    font-weight: bold;\r\n    padding-left: 0px;\n}\n.red-star {\r\n    color: red;\n}\n.field-right {\r\n    padding-left: 12px;\n}\n.text-area {\r\n    margin-left: 3px;\n}\n.button-below {\r\n    margin-top: 20px;\r\n    margin-bottom: 30px;\r\n    width: 300px;\r\n    display: flex;\r\n    justify-content: center;\n}\n.cancel {\r\n    background-color: #eeeeee;\r\n    border: none;\r\n    border-radius: 5px;\r\n    color: #616161;\r\n    font-size: 20px;\r\n    padding: 0.25rem 1.5rem;\r\n    margin-right: 30px;\n}\n.cancel:hover {\r\n    background-color: #d0d6d6;\n}\n.cancel:focus {\r\n    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);\n}\n.addbook {\r\n    /* margin-left: 290px; */\r\n    background-color: #00aced;\r\n    border: none;\r\n    color: white;\r\n    font-size: 20px;\r\n    padding: 0.25rem 1.5rem;\r\n    border-radius: 5px;\r\n    /* margin-right: 140px; */\n}\n.addbook:hover {\r\n    background-color: #006565;\n}\n.addbook:focus {\r\n    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);\n}\n.input-group {\r\n    width: 83%;\n}\n.custom-file-label {\r\n    border: 2px solid #d8dbe0;\r\n    border-radius: 3px;\n}\n#custom-file-label {\r\n    border: 2px solid #d8dbe0;\r\n    border-radius: 3px;\n}\n.change-password:hover {\r\n    background-color: #006565;\n}\n.custom-file-input {\r\n    opacity: 1;\r\n    padding-top: 3px;\r\n    width: 600px;\n}\n#upload-button {\r\n    border-radius: 3px;\n}\r\n\r\n/* danh sach loai phong */\n.search {\r\n    margin-top: 10px;\n}\r\n/* .search input {\r\n    height: 50px;\r\n    border-radius: 5px;\r\n} */\r\n\r\n/* .search-icon {\r\n    height: 50px;\r\n    width: 50px;\r\n} */\n.search-typing {\r\n    border: 2px solid #d8dbe0;\r\n    border-radius: 3px;\r\n    text-indent: 30px;\r\n    /* background: url(../assets/hcmut1.png) no-repeat;\r\n    background-size: 10px 10px; */\r\n    background: url(" + escape(__webpack_require__(/*! ../../../public/images/warehouse/search-icon.png */ "./public/images/warehouse/search-icon.png")) + ") no-repeat\r\n        scroll 5px 5px;\r\n    background-size: 15px 15px;\n}\n::-moz-placeholder {\r\n    color: rgb(196, 189, 189);\n}\n:-ms-input-placeholder {\r\n    color: rgb(196, 189, 189);\n}\n::placeholder {\r\n    color: rgb(196, 189, 189);\n}\r\n", ""]);
 
 // exports
 
@@ -508,13 +534,13 @@ var render = function() {
               }
             },
             [
-              _c("td", [_vm._v(_vm._s(item.ma_loai_phong) + " ")]),
+              _c("td", [_vm._v(_vm._s(item.ma_loai_phong))]),
               _vm._v(" "),
-              _c("td", [_vm._v(" " + _vm._s(item.ten_loai_phong) + " ")]),
+              _c("td", [_vm._v(_vm._s(item.ten_loai_phong))]),
               _vm._v(" "),
-              _c("td", [_vm._v(" " + _vm._s(item.dien_tich) + " ")]),
+              _c("td", [_vm._v(_vm._s(item.dien_tich))]),
               _vm._v(" "),
-              _c("td", [_vm._v(" " + _vm._s(item.so_khach) + " ")]),
+              _c("td", [_vm._v(_vm._s(item.so_khach))]),
               _vm._v(" "),
               _c(
                 "td",
@@ -583,17 +609,23 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("thead", [
-      _c("tr", [
-        _c("th", { staticClass: "col-2" }, [_vm._v("Mã loại phòng")]),
-        _vm._v(" "),
-        _c("th", { staticClass: "col-4" }, [_vm._v("Tên loại phòng")]),
-        _vm._v(" "),
-        _c("th", { staticClass: "col-2" }, [_vm._v("Diện tích (m2)")]),
-        _vm._v(" "),
-        _c("th", { staticClass: "col-2" }, [_vm._v("Số khách tối đa")]),
-        _vm._v(" "),
-        _c("th", { staticClass: "col-2" })
-      ])
+      _c(
+        "tr",
+        {
+          staticStyle: { "background-color": "rgb(8 66 126)", color: "white" }
+        },
+        [
+          _c("th", { staticClass: "col-2" }, [_vm._v("Mã loại phòng")]),
+          _vm._v(" "),
+          _c("th", { staticClass: "col-4" }, [_vm._v("Tên loại phòng")]),
+          _vm._v(" "),
+          _c("th", { staticClass: "col-2" }, [_vm._v("Diện tích (m2)")]),
+          _vm._v(" "),
+          _c("th", { staticClass: "col-2" }, [_vm._v("Số khách tối đa")]),
+          _vm._v(" "),
+          _c("th", { staticClass: "col-2" })
+        ]
+      )
     ])
   }
 ]
@@ -632,7 +664,11 @@ var render = function() {
               }
             ],
             staticClass: "search-typing",
-            attrs: { type: "text", placeholder: "Tên loại phòng", size: "50" },
+            attrs: {
+              type: "text",
+              placeholder: "Tên loại phòng",
+              size: "50px"
+            },
             domProps: { value: _vm.searchQuery },
             on: {
               input: function($event) {
@@ -656,9 +692,10 @@ var render = function() {
             "button",
             {
               staticClass: "btn btn-primary change-password",
+              staticStyle: { "background-color": "rgb(8 66 126)" },
               attrs: { type: "button" }
             },
-            [_vm._v("Thêm loại phòng")]
+            [_vm._v("\n                Thêm loại phòng\n            ")]
           )
         ])
       ],
@@ -783,15 +820,21 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("thead", [
-      _c("tr", [
-        _c("th"),
-        _vm._v(" "),
-        _c("th", { staticClass: "col-6" }, [_vm._v("Tháng")]),
-        _vm._v(" "),
-        _c("th", { staticClass: "col-6" }, [_vm._v("Tổng số lượt khách")]),
-        _vm._v(" "),
-        _c("th")
-      ])
+      _c(
+        "tr",
+        {
+          staticStyle: { "background-color": "rgb(8 66 126)", color: "white" }
+        },
+        [
+          _c("th"),
+          _vm._v(" "),
+          _c("th", { staticClass: "col-6" }, [_vm._v("Tháng")]),
+          _vm._v(" "),
+          _c("th", { staticClass: "col-6" }, [_vm._v("Tổng số lượt khách")]),
+          _vm._v(" "),
+          _c("th")
+        ]
+      )
     ])
   }
 ]

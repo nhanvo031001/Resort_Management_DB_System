@@ -57,6 +57,36 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
@@ -65,7 +95,7 @@ __webpack_require__.r(__webpack_exports__);
       locking: true
     };
   },
-  props: ['items', 'resultQuery'],
+  props: ["items", "resultQuery"],
   components: {},
   created: function created() {
     this.getLoaiPhongByID(this.loaiPhongID);
@@ -74,7 +104,7 @@ __webpack_require__.r(__webpack_exports__);
     getLoaiPhongByID: function getLoaiPhongByID(id) {
       var _this = this;
 
-      axios.get('/api/loaiPhong/' + id).then(function (response) {
+      axios.get("/api/loaiPhong/" + id).then(function (response) {
         console.log(response);
         _this.loaiPhong = response.data[0];
         console.log(_this.loaiPhong);
@@ -99,7 +129,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\n.header-detail-chi-tiet-phong {\r\n    margin-top: 30px;\r\n    font-weight: bold;\r\n    font-size: 30px;\n}\n.filling-all-info {\r\n    margin-top: 40px;\n}\n.one-row-field {\r\n    margin-top: 15px;\n}\n.row-input {\r\n    border: 2px solid #D8DBE0;\r\n    border-radius: 3px;\n}\n.field-name-left {\r\n    padding-left: 115px;\r\n    color: #0084B4;\r\n    font-size: 18px;\r\n    font-weight: bold;\n}\n.field-name-right {\r\n    color: #0084B4;\r\n    font-size: 18px;\r\n    font-weight: bold;\r\n    padding-left: 0px;\n}\n.red-star {\r\n    color: red;\n}\n.field-right {\r\n    padding-left: 12px;\n}\n.text-area {\r\n    margin-left: 3px;\n}\n.button-below-info {\r\n    margin-top: 20px;\r\n    margin-bottom: 30px;\n}\n.cancle-detailed {\r\n    background-color: #EEEEEE;\r\n    border: none ;\r\n    border-radius: 5px;\r\n    color: #616161;\r\n    font-size: 20px;\r\n    padding: 0.25rem 1.5rem;\r\n    margin-right: 30px;\n}\n.cancle-detailed:hover {\r\n    background-color: #d0d6d6;\n}\n.cancle-detailed:focus {\r\n    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);\n}\n.done {\r\n    /* margin-left: 290px; */\r\n    background-color: #00ACED;\r\n    border: none ;\r\n    color: white;\r\n    font-size: 20px;\r\n    padding: 0.25rem 1.5rem;\r\n    border-radius: 5px;\r\n    margin-right: 140px;\n}\n.done:hover {\r\n    background-color: #0084B4;\n}\n.done:focus {\r\n    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);\n}\r\n\r\n\r\n\r\n\r\n\r\n\r\n", ""]);
+exports.push([module.i, "\n.header-detail-chi-tiet-phong {\r\n    margin-top: 30px;\r\n    font-weight: bold;\r\n    font-size: 30px;\n}\n.filling-all-info {\r\n    margin: 40px auto;\r\n    /* padding: 0px 10%; */\n}\n.one-row-field {\r\n    margin-top: 15px;\r\n    width: 100%;\r\n    display: flex;\r\n    justify-content: space-between;\n}\n.row-input {\r\n    border: 1px solid #d8dbe0;\r\n    border-radius: 5px;\r\n    width: 100%;\r\n    padding: 0px 20px;\r\n    height: 50px;\n}\ntextarea.row-input {\r\n    height: 140px;\r\n    margin: 0px;\r\n    padding: 20px;\n}\n.field-name-left {\r\n    color: #0084b4;\r\n    font-size: 18px;\r\n    font-weight: bold;\r\n    width: 20%;\r\n    display: flex;\r\n    align-items: center;\n}\n.field-name-right {\r\n    color: #0084b4;\r\n    font-size: 18px;\r\n    font-weight: bold;\r\n    padding-left: 0px;\n}\n.red-star {\r\n    color: red;\n}\n.field-right {\r\n    padding-left: 12px;\n}\n.button-below-info {\r\n    margin-top: 20px;\r\n    margin-bottom: 30px;\r\n    display: flex;\r\n    justify-content: center;\n}\r\n/* .button-below-info button {\r\n    margin: auto;\r\n} */\n.cancel-detailed {\r\n    background-color: #eeeeee;\r\n    border: none;\r\n    border-radius: 5px;\r\n    color: #616161;\r\n    font-size: 20px;\r\n    padding: 0.25rem 1.5rem;\r\n    margin-right: 30px;\n}\n.cancel-detailed:hover {\r\n    background-color: #d0d6d6;\n}\n.cancel-detailed:focus {\r\n    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);\n}\n.done {\r\n    /* margin-left: 290px; */\r\n    /* background-color: #0084b4; */\r\n    background-color: rgb(8 66 126);\r\n    border: none;\r\n    color: white;\r\n    font-size: 20px;\r\n    padding: 0.25rem 1.5rem;\r\n    border-radius: 5px;\n}\n.done:hover {\r\n    background-color:  #006565;\n}\n.done:focus {\r\n    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);\n}\r\n", ""]);
 
 // exports
 
@@ -153,13 +183,17 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c("div", [
     _c("div", { staticClass: "header-detail-chi-tiet-phong" }, [
-      _vm._v("CHI TIẾT LOẠI PHÒNG THỨ " + _vm._s(_vm.loaiPhongID) + " ")
+      _vm._v(
+        "\n        CHI TIẾT LOẠI PHÒNG THỨ " +
+          _vm._s(_vm.loaiPhongID) +
+          "\n    "
+      )
     ]),
     _vm._v(" "),
     _c("div", { staticClass: "container filling-all-info" }, [
       _c("div", { staticClass: "row one-row-field" }, [
         _c("div", { staticClass: "col-3 text-left field-name-left" }, [
-          _vm._v("Tên loại phòng")
+          _vm._v("\n                Tên loại phòng\n            ")
         ]),
         _vm._v(" "),
         _c("div", { staticClass: "col text-left" }, [
@@ -189,7 +223,7 @@ var render = function() {
       _vm._v(" "),
       _c("div", { staticClass: "row one-row-field" }, [
         _c("div", { staticClass: "col-3 text-left field-name-left" }, [
-          _vm._v("Diện tích (m2)")
+          _vm._v("\n                Diện tích (m2)\n            ")
         ]),
         _vm._v(" "),
         _c("div", { staticClass: "col text-left" }, [
@@ -277,20 +311,16 @@ var render = function() {
         ])
       ]),
       _vm._v(" "),
-      _c("div", { staticClass: "row button-below-info" }, [
-        _c("div", { staticClass: "col-3" }),
-        _vm._v(" "),
-        _c(
-          "div",
-          { staticClass: "col text-right" },
-          [
-            _c("router-link", { attrs: { to: "/admin/loaiphong" } }, [
-              _c("button", { staticClass: "done" }, [_vm._v("Done")])
-            ])
-          ],
-          1
-        )
-      ])
+      _c(
+        "div",
+        { staticClass: "row button-below-info" },
+        [
+          _c("router-link", { attrs: { to: "/admin/loaiphong" } }, [
+            _c("button", { staticClass: "done" }, [_vm._v("Done")])
+          ])
+        ],
+        1
+      )
     ])
   ])
 }

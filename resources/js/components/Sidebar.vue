@@ -5,7 +5,7 @@
             width="30" height="30"></div>
             <div class="title-text">BK RESORT</div>
         </div>
-        <div class="menu-items">
+        <div class="menu-items" id="text-description">
             <router-link to="/admin" active-class="active" tag="button" exact class="side-btn">
                 <div class="link-container">
                     <div class="icon-desciption"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-speedometer2" viewBox="0 0 16 16">

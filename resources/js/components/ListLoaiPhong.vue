@@ -2,7 +2,7 @@
     <div>
         <table class="table table-striped list-book">
             <thead>
-                <tr style="background-color: #0084b4; color: white">
+                <tr style="background-color: rgb(8 66 126); color: white">
                     <th class="col-2">Mã loại phòng</th>
                     <th class="col-4">Tên loại phòng</th>
                     <th class="col-2">Diện tích (m2)</th>

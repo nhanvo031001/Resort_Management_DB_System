@@ -185,7 +185,7 @@
                         </router-link> -->
 
                         <button
-                            style="background-color: #0084b4"
+                            style="background-color: rgb(8 66 126)"
                             v-on:click="themGiuong"
                             type="button"
                             class="btn btn-primary giuong"
@@ -451,7 +451,8 @@ textarea.row-input {
     margin-bottom: 30px;
 }
 .confirm {
-    background-color: #0084b4;
+    /* background-color: #0084b4; */
+    background-color: rgb(8 66 126);
     border: none;
     border-radius: 5px;
     color: white;

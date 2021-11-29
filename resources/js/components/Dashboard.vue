@@ -87,12 +87,17 @@ export default {
                 document.getElementById("sidebar_id").style.transition = 'all 0.45s ease-in-out';
                 document.getElementById("content_id").style.transition = 'all 0.45s ease-in-out';
 
+
+                document.getElementById("text-description").style.marginLeft = "0px";
+
             }
             else {
                 document.getElementById("content_id").style.width = '100vw';
                 document.getElementById("sidebar_id").style.width = '0';
                 document.getElementById("sidebar_id").style.transition = 'all 0.45s ease-in-out';
                 document.getElementById("content_id").style.transition = 'all 0.45s ease-in-out';
+
+                document.getElementById("text-description").style.marginLeft = "-100px";
             }
         },
 
