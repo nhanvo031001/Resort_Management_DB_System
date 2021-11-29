@@ -8,21 +8,21 @@
 
     <div class="container filling-all-info">
             <div class="row one-row-field">
-                <div class="col-3 text-left field-name-left">Tên loại phòng<span class="red-star">*</span> </div>
+                <div class="col-3 text-left field-name-left">Tên loại phòng</div>
                 <div class="col text-left"><input class="row-input" v-model="loaiPhong.ten_loai_phong" type="text" size="80" :disabled="locking"></div>
             </div>
             <div class="row one-row-field">
-                <div class="col-3 text-left field-name-left">Diện tích (m2)<span class="red-star">*</span> </div>
+                <div class="col-3 text-left field-name-left">Diện tích (m2)</div>
                 <div class="col text-left"><input class="row-input" v-model="loaiPhong.dien_tich" type="text" size="80" :disabled="locking"></div>
             </div>
 
             <div class="row one-row-field">
-                <div class="col-3 text-left field-name-left">Số khách<span class="red-star">*</span> </div>
+                <div class="col-3 text-left field-name-left">Số khách</div>
                 <div class="col text-left"><input class="row-input" v-model="loaiPhong.so_khach" type="text" size="80" :disabled="locking"></div>
             </div>
             
             <div class="row one-row-field">
-                <div class="col-3 text-left field-name-left">Mô tả khác<span class="red-star">*</span> </div>
+                <div class="col-3 text-left field-name-left">Mô tả khác</div>
 
                 <div class="col text-left"><textarea  v-model="loaiPhong.mo_ta_khac" class="row-input text-area" rows="6" cols="82" :disabled="locking"></textarea></div>
             </div>

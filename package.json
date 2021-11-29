@@ -28,6 +28,7 @@
         "@egjs/vue-flicking": "^4.4.0",
         "@splidejs/vue-splide": "^0.5.5",
         "bootstrap-vue": "^2.21.2",
+        "sweetalert": "^2.1.2",
         "vue-router": "^3.5.3",
         "vue2-datepicker": "^3.10.3"
     }

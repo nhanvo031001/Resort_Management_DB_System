@@ -168,8 +168,8 @@
 
 
 <script>
-import updateBook from './UpdateBook.vue'
-import bookInfo from './BookInfo.vue'
+// import updateBook from './UpdateBook.vue'
+// import bookInfo from './BookInfo.vue'
 export default {
 
     data() {
@@ -181,8 +181,8 @@ export default {
     props: ['items', 'resultQuery'],
 
     components: {
-        updateBook,
-        bookInfo
+        // updateBook,
+        // bookInfo
     },
 
     methods: {

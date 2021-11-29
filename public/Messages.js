@@ -9,9 +9,7 @@
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _UpdateBook_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./UpdateBook.vue */ "./resources/js/components/UpdateBook.vue");
-/* harmony import */ var _BookInfo_vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./BookInfo.vue */ "./resources/js/components/BookInfo.vue");
-/* harmony import */ var _LoaiPhongInfo_vue__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./LoaiPhongInfo.vue */ "./resources/js/components/LoaiPhongInfo.vue");
+/* harmony import */ var _LoaiPhongInfo_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./LoaiPhongInfo.vue */ "./resources/js/components/LoaiPhongInfo.vue");
 //
 //
 //
@@ -63,8 +61,8 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-
-
+// import updateBook from './UpdateBook.vue'
+// import bookInfo from './BookInfo.vue'
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
@@ -72,9 +70,9 @@ __webpack_require__.r(__webpack_exports__);
   },
   props: ['items', 'resultQuery'],
   components: {
-    updateBook: _UpdateBook_vue__WEBPACK_IMPORTED_MODULE_0__["default"],
-    bookInfo: _BookInfo_vue__WEBPACK_IMPORTED_MODULE_1__["default"],
-    LoaiPhongInfo: _LoaiPhongInfo_vue__WEBPACK_IMPORTED_MODULE_2__["default"]
+    // updateBook,
+    // bookInfo,
+    LoaiPhongInfo: _LoaiPhongInfo_vue__WEBPACK_IMPORTED_MODULE_0__["default"]
   },
   methods: {
     removeRoom: function removeRoom(id) {
@@ -388,49 +386,6 @@ var render = function() {
                           ]
                         )
                       ])
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "button",
-                    {
-                      staticClass: "btn icon",
-                      on: {
-                        click: function($event) {
-                          return _vm.removeRoom(item.ma_loai_phong)
-                        }
-                      }
-                    },
-                    [
-                      _c(
-                        "svg",
-                        {
-                          staticClass: "bi bi-trash",
-                          attrs: {
-                            xmlns: "http://www.w3.org/2000/svg",
-                            width: "16",
-                            height: "16",
-                            fill: "currentColor",
-                            viewBox: "0 0 16 16"
-                          }
-                        },
-                        [
-                          _c("path", {
-                            attrs: {
-                              d:
-                                "M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z"
-                            }
-                          }),
-                          _vm._v(" "),
-                          _c("path", {
-                            attrs: {
-                              "fill-rule": "evenodd",
-                              d:
-                                "M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z"
-                            }
-                          })
-                        ]
-                      )
                     ]
                   )
                 ],

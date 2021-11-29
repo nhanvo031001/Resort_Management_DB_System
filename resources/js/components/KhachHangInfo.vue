@@ -4,41 +4,41 @@
    
     <div class="container filling-all-info">
             <div class="row one-row-field">
-                <div class="col-3 text-left field-name-left">Mã khách hàng<span class="red-star">*</span> </div>
+                <div class="col-3 text-left field-name-left">Mã khách hàng</div>
                 <div class="col text-left"><input class="row-input" v-model="khachHang.ma_khach_hang" type="text" size="80" :disabled="locking"></div>
             </div>
             <div class="row one-row-field">
-                <div class="col-3 text-left field-name-left">CCCD/CMND<span class="red-star">*</span> </div>
+                <div class="col-3 text-left field-name-left">CCCD/CMND</div>
                 <div class="col text-left"><input class="row-input" v-model="khachHang.cccd_cmnd" type="text" size="80" :disabled="locking"></div>
             </div>
 
             <div class="row one-row-field">
-                <div class="col-3 text-left field-name-left">Họ tên<span class="red-star">*</span> </div>
+                <div class="col-3 text-left field-name-left">Họ tên</div>
                 <div class="col text-left"><input class="row-input" v-model="khachHang.ho_ten" type="text" size="80" :disabled="locking"></div>
             </div>
 
             <div class="row one-row-field">
-                <div class="col-3 text-left field-name-left">Điện thoại<span class="red-star">*</span> </div>
+                <div class="col-3 text-left field-name-left">Điện thoại</div>
                 <div class="col text-left"><input class="row-input" v-model="khachHang.dien_thoai" type="text" size="80" :disabled="locking"></div>
             </div>
 
             <div class="row one-row-field">
-                <div class="col-3 text-left field-name-left">Email<span class="red-star">*</span> </div>
+                <div class="col-3 text-left field-name-left">Email</div>
                 <div class="col text-left"><input class="row-input" v-model="khachHang.email" type="text" size="80" :disabled="locking"></div>
             </div>
 
             <div class="row one-row-field">
-                <div class="col-3 text-left field-name-left">Username<span class="red-star">*</span> </div>
+                <div class="col-3 text-left field-name-left">Username</div>
                 <div class="col text-left"><input class="row-input" v-model="khachHang.username" type="text" size="80" :disabled="locking"></div>
             </div>
 
             <div class="row one-row-field">
-                <div class="col-3 text-left field-name-left">Điểm<span class="red-star">*</span> </div>
+                <div class="col-3 text-left field-name-left">Điểm</div>
                 <div class="col text-left"><input class="row-input" v-model="khachHang.diem" type="text" size="80" :disabled="locking"></div>
             </div>
 
             <div class="row one-row-field">
-                <div class="col-3 text-left field-name-left">Loại<span class="red-star">*</span> </div>
+                <div class="col-3 text-left field-name-left">Loại</div>
                 <div class="col text-left"><input class="row-input" v-model="khachHang.loai" type="text" size="80" :disabled="locking"></div>
             </div>
             
@@ -88,7 +88,7 @@ export default {
             .then (response => {
                 console.log(response)
                 this.khachHang = response.data[0]
-                console.log(this.loaiPhong)
+                // console.log(this.loaiPhong)
             })
             .catch (error => {
                 console.log(error)

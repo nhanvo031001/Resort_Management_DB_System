@@ -1,108 +1,21 @@
 <template>
     <div class="overview">
-        <div class="title">YOUR PROFILE</div>
-        <!-- <div class="container content">
-            <div class="row no-padding ">
-                <div class="col-4 avatar">
-                    <div class="image-container">              
-                        <img src="../assets/hcmut1.png" alt="" class="image-avatar" >
-                    </div>
-                    <div class="name">
-                        Nhan Vo
-                    </div>
-                </div>
-                <div class="col filling text-left">
-                    <form action="">
-                        <div class="no-padding input-field">User ID<span class="star">*</span> </div>
-                        <input type="text" class="input-filling" size="60" :disabled="locking" value="1" style="font-size: 20px;"> <br>
-                        <div class="no-padding input-field">Position<span class="star">*</span> </div>
-                        <input type="text" class="input-filling" size="60" :disabled="locking" value="Warehouse Manager" style="font-size: 20px;">
-                        <div class="no-padding input-field">Email<span class="star">*</span> </div>
-                        <input type="text" class="input-filling" size="60" :disabled="locking" value="nhanvo@hcmut.edu.vn" style="font-size: 20px;"> <br>
-                        <div class="no-padding input-field">Birthday<span class="star">*</span> </div>
-                        <input type="text" class="input-filling" size="60" :disabled="locking" value="2001-10-03" style="font-size: 20px;"> <br>
-                        <div class="no-padding input-field">Phone number<span class="star">*</span> </div>
-                        <input type="text" class="input-filling" size="60" :disabled="locking" value="0919140703" style="font-size: 20px;"> <br>
-                        <div class="no-padding input-field">Address<span class="star">*</span> </div>
-                        <input type="text" class="input-filling" size="60" :disabled="locking" value="Ho Chi Minh City" style="font-size: 20px;"> <br>
-                    </form>
-                    
-                    <div class="button-below">
-                        <router-link to="/admin/changePassword">     
-                            <button class="change-password">Change password</button>
-                        </router-link>
-
-                        <router-link to="/admin/editProfile">     
-                            <button class="edit-profile">Edit Profile</button>
-                        </router-link>
-                        
-                        
-                    </div>
-                    
-                            
-                </div>
-                
-            </div>
-        </div> -->
 
 
-        <!-- Have data() script-->
-
-        <!-- {{user_account}} -->
-        <div class="container content">
-            <div class="row no-padding ">
-                <div class="col-4 avatar">
-                    <div class="image-container">              
-                        <img src="../../../public/images/warehouse/hcmut1.png" alt="" class="image-avatar" >
-                    </div>
-                    <div class="name">
-                        {{user_account.username}}
-                    </div>
-                </div>
-                <div class="col filling text-left">
-                    <!-- <div> {{this.user_account}} </div> -->
-
-                    <form action="">
-                        <div class="no-padding input-field">User ID<span class="star">*</span> </div>
-                        <input type="text" class="input-filling" size="60" :disabled="locking" v-model="user_account.user_id" style="font-size: 20px;"> <br>
-                        <div class="no-padding input-field">Position<span class="star">*</span> </div>
-                        <input type="text" class="input-filling" size="60" :disabled="locking" v-model="user_account.role" style="font-size: 20px;">
-                        <div class="no-padding input-field">Email<span class="star">*</span> </div>
-                        <input type="text" class="input-filling" size="60" :disabled="locking" v-model="user_account.email" style="font-size: 20px;"> <br>
-                        <!-- <div class="no-padding input-field">Birthday<span class="star">*</span> </div>
-                        <input type="text" class="input-filling" size="60" :disabled="locking" v-model="user_account.birthday" style="font-size: 20px;"> <br> -->
-                        <div class="no-padding input-field">Phone number<span class="star">*</span> </div>
-                        <input type="text" class="input-filling" size="60" :disabled="locking" v-model="user_account.phone" style="font-size: 20px;"> <br>
-                        <div class="no-padding input-field">Address<span class="star">*</span> </div>
-                        <input type="text" class="input-filling" size="60" :disabled="locking" v-model="user_account.address" style="font-size: 20px;"> <br>
-                    </form>
-                    
-                    <div class="button-below">
-                        <router-link :to="{name: 'changePassword', params: {userID: user_account.user_id}}">     
-                            <button class="change-password">Change password</button>
-                        </router-link>
-                        
-                        <router-link :to="{name: 'editProfile', params: {userID: user_account.user_id}}">   
-                            <button class="edit-profile">Edit Profile</button>
-                        </router-link> 
-                    </div>
-                    
-                            
-                </div>
-                
-            </div>
-        </div>
+        <div class="welcome">WELCOME TO BK RESORT</div>
+        
+        
     </div>
 </template>
 
 <script>
-import editProfile from './EditProfile.vue'
-import changePassword from './ChangePassword.vue'
+// import editProfile from './EditProfile.vue'
+// import changePassword from './ChangePassword.vue'
 
     export default {
         components: {
-            editProfile,
-            changePassword
+            // editProfile,
+            // changePassword
         },
 
 
@@ -289,6 +202,10 @@ import changePassword from './ChangePassword.vue'
 
 .edit-profile:focus {
     box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
+}
+
+.welcome {
+    color: #36b2ce;
 }
 
 

@@ -43,8 +43,8 @@
 
 <script>
 
-import updateBook from './UpdateBook.vue'
-import bookInfo from './BookInfo.vue'
+// import updateBook from './UpdateBook.vue'
+// import bookInfo from './BookInfo.vue'
 
 import KhachHangInfo from './KhachHangInfo.vue'
 import KhachHangDonDatPhong from './KhachHangDonDatPhong.vue'
@@ -60,8 +60,8 @@ export default {
     props: ['items', 'resultQuery'],
 
     components: {
-        updateBook,
-        bookInfo,
+        // updateBook,
+        // bookInfo,
 
         KhachHangInfo,
         KhachHangDonDatPhong

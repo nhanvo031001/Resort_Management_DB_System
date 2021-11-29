@@ -45,16 +45,21 @@ const routes = [
             path: 'thongke',
             component: () => import(/* webpackChunkName: "Messages" */ '../components/ThongKe.vue')
         },
+        // {
+        //     path: 'themGiuong/:para',
+        //     name: 'themGiuong',
+        //     component: () => import(/* webpackChunkName: "Profile" */ '../components/ThemGiuong.vue'),
+        //     props: true,
+        // },
+        // {
+        //     path: 'themVatTu',
+        //     name: 'themVatTu',
+        //     component: () => import(/* webpackChunkName: "Profile" */ '../components/ThemVatTu.vue')
+        // },
         {
-            path: 'themGiuong/:arrGiuong',
-            name: 'themGiuong',
-            component: () => import(/* webpackChunkName: "Profile" */ '../components/ThemGiuong.vue'),
-            props: true,
-        },
-        {
-            path: 'themVatTu',
-            name: 'themVatTu',
-            component: () => import(/* webpackChunkName: "Profile" */ '../components/ThemVatTu.vue')
+            path: 'themLoaiPhong/:para',
+            name: 'themLoaiPhong',
+            component: () => import(/* webpackChunkName: "Profile" */ '../components/ThemLoaiPhong.vue')
         },
         // {
         //     path: 'updatebook/:bookID',
