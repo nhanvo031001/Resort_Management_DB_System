@@ -533,8 +533,14 @@ textarea.row-input {
     /* margin-right: 140px; */
 }
 
-.giuong {
+.btn.btn-primary.giuong {
     margin-right: 0px;
+}
+.btn.btn-primary.giuong:hover {
+    background-color: #006565;
+}
+.btn.btn-primary.giuong:active {
+    background-color: #005050;
 }
 
 .vat-tu-input {
