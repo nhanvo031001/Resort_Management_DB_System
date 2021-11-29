@@ -65,15 +65,26 @@
                     <td>{{ item.diem }}</td>
                     <td>{{ item.loai }}</td>
                     <td>
-
                         <div class="xem-thong-tin">
-                            <router-link :to="{name: 'khachHangInfo', params: {khachHangID: item.ma_khach_hang}}"> 
-                                <button type="button" class="btn btn-primary">Xem thông tin</button>
+                            <router-link
+                                :to="{
+                                    name: 'khachHangInfo',
+                                    params: { khachHangID: item.ma_khach_hang }
+                                }"
+                            >
+                                <button type="button" class="btn btn-primary">
+                                    Xem thông tin
+                                </button>
                             </router-link>
                         </div>
 
                         <div class="xem-don-dat-phong">
-                            <router-link :to="{name: 'donDatPhong', params: { khachHangID: item.ma_khach_hang } }">
+                            <router-link
+                                :to="{
+                                    name: 'donDatPhong',
+                                    params: { khachHangID: item.ma_khach_hang }
+                                }"
+                            >
                                 <button type="button" class="btn btn-success">
                                     Xem đơn đặt phòng
                                 </button>
@@ -113,9 +124,6 @@ export default {
 </script>
 
 <style>
-.xem-thong-tin {
-    margin-right: 20px;
-}
 .table thead th {
     vertical-align: middle;
 }
@@ -123,13 +131,11 @@ export default {
 .table td {
     vertical-align: middle;
 }
-
+.xem-don-dat-phong,
 .xem-thong-tin {
-    margin-left: -28px;
+    margin: 7px 5px;
 }
-
-.xem-don-dat-phong {
-    margin-top: 7px;
-    margin-right: 5px;
+.btn.btn-primary, .btn.btn-success{
+    width: 90%;
 }
 </style>

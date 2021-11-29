@@ -5,10 +5,7 @@
         </div>
 
         <!-- style="background-color: #0084b4; color: white" -->
-        <div
-            
-            class="container filling-all-info"
-        >
+        <div class="container filling-all-info">
             <div class="row one-row-field">
                 <div class="col-3 text-left field-name-left">Mã khách hàng</div>
                 <div class="col text-left">
@@ -113,12 +110,12 @@
             </div>
 
             <div class="row button-below-info-KH">
-                <div class="col-3"></div>
-                <div class="col text-right">
-                    <router-link to="/admin/khachhang">
-                        <button class="done">Done</button>
-                    </router-link>
-                </div>
+                <!-- <div class="col-3"></div> -->
+                <!-- <div class="col text-right"> -->
+                <router-link to="/admin/khachhang">
+                    <button class="done">Hoàn thành</button>
+                </router-link>
+                <!-- </div> -->
             </div>
         </div>
     </div>
@@ -174,7 +171,10 @@ export default {
 
 .row-input {
     border: 2px solid #d8dbe0;
-    border-radius: 3px;
+    border-radius: 5px;
+    width: 100%;
+    height: 50px;
+    padding: 0px 20px;
 }
 
 .field-name-left {
@@ -182,6 +182,7 @@ export default {
     color: #0084b4;
     font-size: 18px;
     font-weight: bold;
+    display: flex; align-items: center;
 }
 
 .field-name-right {
@@ -206,6 +207,8 @@ export default {
 .button-below-info-KH {
     margin-top: 20px;
     margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
 }
 
 .cancle-detailed {

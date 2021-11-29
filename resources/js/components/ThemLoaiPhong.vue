@@ -185,7 +185,7 @@
                         </router-link> -->
 
                         <button
-                            style="background-color: rgb(8 66 126)"
+                            style="background-color: rgb(8 66 126); width: 150px"
                             v-on:click="themGiuong"
                             type="button"
                             class="btn btn-primary giuong"

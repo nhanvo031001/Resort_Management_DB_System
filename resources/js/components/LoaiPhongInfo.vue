@@ -68,7 +68,7 @@
                 <!-- <div class="col-3"></div>
                 <div class="col text-right"> -->
                 <router-link to="/admin/loaiphong">
-                    <button class="done">Done</button>
+                    <button class="done">Hoàn thành</button>
                 </router-link>
                 <!-- </div> -->
             </div>
