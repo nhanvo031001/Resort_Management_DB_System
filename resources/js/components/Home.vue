@@ -1,10 +1,6 @@
 <template>
     <div class="overview">
-
-
         <div class="welcome">WELCOME TO BK RESORT</div>
-        
-        
     </div>
 </template>
 
@@ -12,66 +8,63 @@
 // import editProfile from './EditProfile.vue'
 // import changePassword from './ChangePassword.vue'
 
-    export default {
-        components: {
-            // editProfile,
-            // changePassword
-        },
+export default {
+    components: {
+        // editProfile,
+        // changePassword
+    },
 
-
-        data() {
-            return {
-                locking:true,
-                // user: {
-                //     id: 1910409,
-                //     position: 'Warehouse Manager',
-                //     email: 'nhanvo@hcmut.edu.vn',
-                //     birthday: '2001-10-03',
-                //     phone: '0919140703',
-                //     address: 'Ha Tien City'
-                // },
-                user_account: {},
-                language: '',
-            }
-        },
-
-        created() {
-            // this.getUser();
-        },
-
-        methods: {
-            // getUser() {
-            // //console.log('hihihi')
-            // axios.get('/api/users')
-            // .then(response => {
-            //     this.user_account = response.data[0];       // one object
-            //     console.log(this.user_account)
-            // })
-            // .catch(error => {
-            //     console.log(error.response)
-            // });
-            
-            // }
-
-
-            // getUser() {
-            //     // axios.get('/api/user/' + 1910409)
-            //     axios.get('/api/getUser')
-            //     .then (response => {
-            //         console.log(response)
-            //         this.user_account = response.data[0]
-            //         console.log(this.book)
-            //     })
-            //     .catch (error => {
-            //         console.log(error)
-            //     })
+    data() {
+        return {
+            locking: true,
+            // user: {
+            //     id: 1910409,
+            //     position: 'Warehouse Manager',
+            //     email: 'nhanvo@hcmut.edu.vn',
+            //     birthday: '2001-10-03',
+            //     phone: '0919140703',
+            //     address: 'Ha Tien City'
             // },
-        }
+            user_account: {},
+            language: ""
+        };
+    },
+
+    created() {
+        // this.getUser();
+    },
+
+    methods: {
+        // getUser() {
+        // //console.log('hihihi')
+        // axios.get('/api/users')
+        // .then(response => {
+        //     this.user_account = response.data[0];       // one object
+        //     console.log(this.user_account)
+        // })
+        // .catch(error => {
+        //     console.log(error.response)
+        // });
+        // }
+        // getUser() {
+        //     // axios.get('/api/user/' + 1910409)
+        //     axios.get('/api/getUser')
+        //     .then (response => {
+        //         console.log(response)
+        //         this.user_account = response.data[0]
+        //         console.log(this.book)
+        //     })
+        //     .catch (error => {
+        //         console.log(error)
+        //     })
+        // },
     }
+};
 </script>
 
 <style scoped>
-.overview {         /*not use*/
+.overview {
+    /*not use*/
     /* display: flex;
     justify-content: center;
     align-items: center; */
@@ -102,7 +95,7 @@
     position: relative;
     overflow: hidden;
     border-radius: 50%;
-    border: 3px solid #0084B4;
+    border: 3px solid #0084b4;
     margin-left: 75px;
 }
 
@@ -111,9 +104,9 @@
     border-radius: 50%;
     border: 2px solid blue; */
     display: inline;
-  margin: 0 auto;
-  height: 100%;
-  width: auto;
+    margin: 0 auto;
+    height: 100%;
+    width: auto;
 }
 
 .name {
@@ -121,7 +114,7 @@
     /* border: 1px solid red; */
     width: 200px;
     margin-left: 75px;
-    background-color: #0084B4;
+    background-color: #0084b4;
     border-radius: 20px 0px 20px 0px;
     color: white;
     border: none;
@@ -129,8 +122,7 @@
     padding-top: 10px;
 }
 
-
-.title {      
+.title {
     /* display: flex;
     justify-content: center;
     align-items: center; */
@@ -154,13 +146,13 @@
 
 .input-field {
     font-size: 20px;
-    color: #0084B4;
+    color: #0084b4;
     font-weight: normal;
     margin-top: 10px;
 }
 
 .input-filling {
-    border: 2px solid #D8DBE0;
+    border: 2px solid #d8dbe0;
     border-radius: 3px;
 }
 
@@ -170,8 +162,8 @@
 }
 
 .change-password {
-    background-color: #EEEEEE;
-    border: none ;
+    background-color: #eeeeee;
+    border: none;
     border-radius: 5px;
     color: #616161;
     font-size: 20px;
@@ -188,8 +180,8 @@
 
 .edit-profile {
     margin-left: 290px;
-    background-color: #00ACED;
-    border: none ;
+    background-color: #00aced;
+    border: none;
     color: white;
     font-size: 20px;
     padding: 0.25rem 1.5rem;
@@ -197,7 +189,7 @@
 }
 
 .edit-profile:hover {
-    background-color: #0084B4;
+    background-color: #0084b4;
 }
 
 .edit-profile:focus {
@@ -205,8 +197,6 @@
 }
 
 .welcome {
-    color: #36b2ce;
+    color: #0084b4;
 }
-
-
 </style>

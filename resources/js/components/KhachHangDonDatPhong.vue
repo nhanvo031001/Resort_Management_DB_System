@@ -1,10 +1,10 @@
 <template>
-  <div>
+    <div>
+        <div class="header-don-dat-phong">
+            ĐƠN ĐẶT PHÒNG CỦA KHÁCH HÀNG {{ khachHangID }}
+        </div>
 
-
-    <div class="header-don-dat-phong">ĐƠN ĐẶT PHÒNG CỦA KHÁCH HÀNG {{khachHangID}} </div>
-
-    <table class="table table-striped list-don">
+        <table class="table table-striped list-don">
             <thead>
                 <tr>
                     <th class="col-2">Mã đặt phòng</th>
@@ -18,56 +18,47 @@
             </thead>
 
             <tbody>
-                <tr v-for="item in donDatPhong" :key="item.ma_dat_phong" v-on:orderchanged="getList()">
-                    <td >{{item.ma_dat_phong}} </td>
-                    <td > {{item.ngay_gio_dat}} </td>
-                    <td > {{item.so_khach}} </td>
-                    <td > {{item.ngay_nhan_phong}} </td>
-                    <td > {{item.ngay_tra_phong}} </td>
-                    <td > {{item.tong_tien}} </td>
+                <tr
+                    v-for="item in donDatPhong"
+                    :key="item.ma_dat_phong"
+                    v-on:orderchanged="getList()"
+                >
+                    <td>{{ item.ma_dat_phong }}</td>
+                    <td>{{ item.ngay_gio_dat }}</td>
+                    <td>{{ item.so_khach }}</td>
+                    <td>{{ item.ngay_nhan_phong }}</td>
+                    <td>{{ item.ngay_tra_phong }}</td>
+                    <td>{{ item.tong_tien }}</td>
                     <!-- <td > {{item.tinh_trang}} </td> -->
-                    <td v-if="item.tinh_trang ===  0"> Chưa thanh toán </td>
-                    <td v-else-if="item.tinh_trang ===  1"> Đã thanh toán </td>
-                    <td v-else-if="item.tinh_trang ===  2"> Đã hủy, chưa hoàn tiền </td>
-                    <td v-else> Đã hủy và hoàn tiền </td>
+                    <td v-if="item.tinh_trang === 0">Chưa thanh toán</td>
+                    <td v-else-if="item.tinh_trang === 1">Đã thanh toán</td>
+                    <td v-else-if="item.tinh_trang === 2">
+                        Đã hủy, chưa hoàn tiền
+                    </td>
+                    <td v-else>Đã hủy và hoàn tiền</td>
                 </tr>
-
-
             </tbody>
         </table>
 
-
         <div class="row button-below-dondatphong">
-            <div class="col-3"></div> 
-            <div class="col text-right">
-
             <router-link to="/admin/khachhang">
                 <button class="done">Hoàn thành</button>
-            </router-link>  
-                
-            </div>
+            </router-link>
         </div>
-
-  </div>
+    </div>
 </template>
 
-
-
 <script>
-
 export default {
-
     data() {
         return {
             khachHangID: this.$route.params.khachHangID,
-            maDatPhong: '',
-            donDatPhong: [],
-        }
+            maDatPhong: "",
+            donDatPhong: []
+        };
     },
 
-    components: {
-        
-    },
+    components: {},
 
     created() {
         this.getMaDatPhong();
@@ -75,38 +66,40 @@ export default {
 
     methods: {
         getMaDatPhong() {
-            axios.get('/api/maDatPhong/' + this.khachHangID)
-            .then (response => {
-                console.log(response)
-                if (response.data != 'Khong tim thay ma dat phong')
-                    this.donDatPhong = response.data
-                else this.donDatPhong = []
-                console.log(this.donDatPhong)
-            })
-            .catch (error => {
-                console.log(error)
-            })
-        },
-
+            axios
+                .get("/api/maDatPhong/" + this.khachHangID)
+                .then(response => {
+                    console.log(response);
+                    if (response.data != "Khong tim thay ma dat phong")
+                        this.donDatPhong = response.data;
+                    else this.donDatPhong = [];
+                    console.log(this.donDatPhong);
+                })
+                .catch(error => {
+                    console.log(error);
+                });
+        }
     }
-}
+};
 </script>
 
 <style>
 .button-below-dondatphong {
     margin-top: 20px;
     margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
 }
 
 .done {
     /* margin-left: 290px; */
-    background-color: #00ACED;
-    border: none ;
+    background-color: #0084b4;
+    border: none;
     color: white;
     font-size: 20px;
     padding: 0.25rem 1.5rem;
     border-radius: 5px;
-    margin-right: 140px;
+    /* margin-right: 140px; */
 }
 
 .list-don {
@@ -118,5 +111,4 @@ export default {
     font-weight: bold;
     font-size: 30px;
 }
-
 </style>

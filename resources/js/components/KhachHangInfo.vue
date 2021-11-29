@@ -1,82 +1,139 @@
 <template>
-  <div>
-    <div class="header-detail-thong-tin-KH">THÔNG TIN KHÁCH HÀNG {{khachHangID}} </div>
-   
-    <div class="container filling-all-info">
+    <div>
+        <div class="header-detail-thong-tin-KH">
+            THÔNG TIN KHÁCH HÀNG {{ khachHangID }}
+        </div>
+
+        <div
+            style="background-color: #0084b4; color: white"
+            class="container filling-all-info"
+        >
             <div class="row one-row-field">
                 <div class="col-3 text-left field-name-left">Mã khách hàng</div>
-                <div class="col text-left"><input class="row-input" v-model="khachHang.ma_khach_hang" type="text" size="80" :disabled="locking"></div>
+                <div class="col text-left">
+                    <input
+                        class="row-input"
+                        v-model="khachHang.ma_khach_hang"
+                        type="text"
+                        size="80"
+                        :disabled="locking"
+                    />
+                </div>
             </div>
             <div class="row one-row-field">
                 <div class="col-3 text-left field-name-left">CCCD/CMND</div>
-                <div class="col text-left"><input class="row-input" v-model="khachHang.cccd_cmnd" type="text" size="80" :disabled="locking"></div>
+                <div class="col text-left">
+                    <input
+                        class="row-input"
+                        v-model="khachHang.cccd_cmnd"
+                        type="text"
+                        size="80"
+                        :disabled="locking"
+                    />
+                </div>
             </div>
 
             <div class="row one-row-field">
                 <div class="col-3 text-left field-name-left">Họ tên</div>
-                <div class="col text-left"><input class="row-input" v-model="khachHang.ho_ten" type="text" size="80" :disabled="locking"></div>
+                <div class="col text-left">
+                    <input
+                        class="row-input"
+                        v-model="khachHang.ho_ten"
+                        type="text"
+                        size="80"
+                        :disabled="locking"
+                    />
+                </div>
             </div>
 
             <div class="row one-row-field">
                 <div class="col-3 text-left field-name-left">Điện thoại</div>
-                <div class="col text-left"><input class="row-input" v-model="khachHang.dien_thoai" type="text" size="80" :disabled="locking"></div>
+                <div class="col text-left">
+                    <input
+                        class="row-input"
+                        v-model="khachHang.dien_thoai"
+                        type="text"
+                        size="80"
+                        :disabled="locking"
+                    />
+                </div>
             </div>
 
             <div class="row one-row-field">
                 <div class="col-3 text-left field-name-left">Email</div>
-                <div class="col text-left"><input class="row-input" v-model="khachHang.email" type="text" size="80" :disabled="locking"></div>
+                <div class="col text-left">
+                    <input
+                        class="row-input"
+                        v-model="khachHang.email"
+                        type="text"
+                        size="80"
+                        :disabled="locking"
+                    />
+                </div>
             </div>
 
             <div class="row one-row-field">
                 <div class="col-3 text-left field-name-left">Username</div>
-                <div class="col text-left"><input class="row-input" v-model="khachHang.username" type="text" size="80" :disabled="locking"></div>
+                <div class="col text-left">
+                    <input
+                        class="row-input"
+                        v-model="khachHang.username"
+                        type="text"
+                        size="80"
+                        :disabled="locking"
+                    />
+                </div>
             </div>
 
             <div class="row one-row-field">
                 <div class="col-3 text-left field-name-left">Điểm</div>
-                <div class="col text-left"><input class="row-input" v-model="khachHang.diem" type="text" size="80" :disabled="locking"></div>
+                <div class="col text-left">
+                    <input
+                        class="row-input"
+                        v-model="khachHang.diem"
+                        type="text"
+                        size="80"
+                        :disabled="locking"
+                    />
+                </div>
             </div>
 
             <div class="row one-row-field">
                 <div class="col-3 text-left field-name-left">Loại</div>
-                <div class="col text-left"><input class="row-input" v-model="khachHang.loai" type="text" size="80" :disabled="locking"></div>
-            </div>
-            
-            <div class="row button-below-info-KH">
-                <div class="col-3"></div> 
-                <div class="col text-right">
-
-                <router-link to="/admin/khachhang">
-                   <button class="done">Done</button>
-                </router-link>  
-                 
+                <div class="col text-left">
+                    <input
+                        class="row-input"
+                        v-model="khachHang.loai"
+                        type="text"
+                        size="80"
+                        :disabled="locking"
+                    />
                 </div>
             </div>
+
+            <div class="row button-below-info-KH">
+                <div class="col-3"></div>
+                <div class="col text-right">
+                    <router-link to="/admin/khachhang">
+                        <button class="done">Done</button>
+                    </router-link>
+                </div>
+            </div>
+        </div>
     </div>
-
-
-
-  </div>
 </template>
 
-
-
 <script>
-
 export default {
-
     data() {
         return {
             khachHangID: this.$route.params.khachHangID,
             khachHang: {},
-            locking: true,
-        }
+            locking: true
+        };
     },
 
-
-    components: {
-        
-    },
+    components: {},
 
     created() {
         this.getKhachHangByID(this.khachHangID);
@@ -84,23 +141,22 @@ export default {
 
     methods: {
         getKhachHangByID(id) {
-            axios.get('/api/khachHang/' + id)
-            .then (response => {
-                console.log(response)
-                this.khachHang = response.data[0]
-                // console.log(this.loaiPhong)
-            })
-            .catch (error => {
-                console.log(error)
-            })
-        },
+            axios
+                .get("/api/khachHang/" + id)
+                .then(response => {
+                    console.log(response);
+                    this.khachHang = response.data[0];
+                    // console.log(this.loaiPhong)
+                })
+                .catch(error => {
+                    console.log(error);
+                });
+        }
     }
-}
+};
 </script>
 
 <style>
-
-
 .header-detail-thong-tin-KH {
     margin-top: 30px;
     font-weight: bold;
@@ -116,19 +172,19 @@ export default {
 }
 
 .row-input {
-    border: 2px solid #D8DBE0;
+    border: 2px solid #d8dbe0;
     border-radius: 3px;
 }
 
 .field-name-left {
-    padding-left: 115px;
-    color: #0084B4;
+    /* padding-left: 115px; */
+    color: #0084b4;
     font-size: 18px;
     font-weight: bold;
 }
 
 .field-name-right {
-    color: #0084B4;
+    color: #0084b4;
     font-size: 18px;
     font-weight: bold;
     padding-left: 0px;
@@ -152,8 +208,8 @@ export default {
 }
 
 .cancle-detailed {
-    background-color: #EEEEEE;
-    border: none ;
+    background-color: #eeeeee;
+    border: none;
     border-radius: 5px;
     color: #616161;
     font-size: 20px;
@@ -171,26 +227,20 @@ export default {
 
 .done {
     /* margin-left: 290px; */
-    background-color: #00ACED;
-    border: none ;
+    background-color: #0084b4;
+    border: none;
     color: white;
     font-size: 20px;
     padding: 0.25rem 1.5rem;
     border-radius: 5px;
-    margin-right: 140px;
+    /* margin-right: 140px; */
 }
 
 .done:hover {
-    background-color: #0084B4;
+    background-color: #006565;
 }
 
 .done:focus {
     box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
 }
-
-
-
-
-
-
 </style>

@@ -113,7 +113,7 @@ export default {
 }
 
 .field-name-left {
-    padding-left: 115px;
+    /* padding-left: 115px; */
     color: #0084B4;
     font-size: 18px;
     font-weight: bold;
@@ -144,7 +144,7 @@ export default {
     width: 300px;
 }
 
-.cancle {
+.cancel {
     background-color: #EEEEEE;
     border: none ;
     border-radius: 5px;
@@ -154,11 +154,11 @@ export default {
     margin-right: 30px;
 }
 
-.cancle:hover {
+.cancel:hover {
     background-color: #d0d6d6;
 }
 
-.cancle:focus {
+.cancel:focus {
     box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
 }
 
@@ -170,11 +170,11 @@ export default {
     font-size: 20px;
     padding: 0.25rem 1.5rem;
     border-radius: 5px;
-    margin-right: 140px;
+    /* margin-right: 140px; */
 }
 
 .addbook:hover {
-    background-color: #0084B4;
+    background-color: #006565;
 }
 
 .addbook:focus {

@@ -7,6 +7,7 @@
       
       <!-- <b-form-select v-model="selected" :options="options" size="sm" class="mt-3"></b-form-select> -->
     </div>
+    
     <div class="d-flex justify-content-between w-50 align-items-center selection">
       <span>Chọn năm</span>
       <b-form-select v-model="year" :options="yearOptions" class="w-75"></b-form-select>
@@ -15,7 +16,7 @@
 
     <table class="table table-striped list-book w-75">
             <thead>
-                <tr>
+                <tr style="background-color: #0084b4; color: white;">
                     <th></th>
                     <th class="col-6">Tháng</th>
                     <th class="col-6">Tổng số lượt khách</th>
