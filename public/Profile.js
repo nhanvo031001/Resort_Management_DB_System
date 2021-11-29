@@ -532,7 +532,7 @@ __webpack_require__.r(__webpack_exports__);
 
       for (; idx < this.tempArr.length; idx++) {
         if (this.tempArr[idx].ma_loai_vat_tu == item) {
-          if (this.tempArr[idx].so_luong == 1 && number == -1) {} else {
+          if (this.tempArr[idx].so_luong == 0 && number == -1) {} else {
             this.tempArr[idx].so_luong += number;
             break;
           }
@@ -562,7 +562,7 @@ __webpack_require__.r(__webpack_exports__);
           var tempobj = {
             ma_loai_vat_tu: obj.ma_loai_vat_tu,
             ten_loai_vat_tu: obj.ten_loai_vat_tu,
-            so_luong: 1
+            so_luong: 0
           }; //console.log(tempobj)
 
           _this.tempArr.push(tempobj);
@@ -615,7 +615,7 @@ __webpack_require__.r(__webpack_exports__);
         var idx = 0;
 
         for (; idx < _this2.tempArr.length; idx++) {
-          _this2.tempArr[idx].so_luong = 1;
+          _this2.tempArr[idx].so_luong = 0;
         }
       })["catch"](function (error) {
         console.log(error.response);

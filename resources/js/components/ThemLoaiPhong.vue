@@ -182,7 +182,7 @@ export default {
             var idx = 0
             for (; idx < this.tempArr.length; idx++) {
                 if(this.tempArr[idx].ma_loai_vat_tu == item) {
-                    if (this.tempArr[idx].so_luong == 1 && number == -1) {
+                    if (this.tempArr[idx].so_luong == 0 && number == -1) {
 
                     }
                     else {
@@ -212,7 +212,7 @@ export default {
                 console.log(this.items)
                 for (var key in this.items) {
                     var obj = this.items[key]
-                    var tempobj = {ma_loai_vat_tu: obj.ma_loai_vat_tu, ten_loai_vat_tu: obj.ten_loai_vat_tu, so_luong: 1}
+                    var tempobj = {ma_loai_vat_tu: obj.ma_loai_vat_tu, ten_loai_vat_tu: obj.ten_loai_vat_tu, so_luong: 0}
                     //console.log(tempobj)
                     this.tempArr.push(tempobj)
                 }
@@ -268,7 +268,7 @@ export default {
                 this.giuongArr = []
                 var idx = 0
                 for (; idx < this.tempArr.length; idx++) {
-                    this.tempArr[idx].so_luong = 1
+                    this.tempArr[idx].so_luong = 0
                 }
             })
             .catch(error => {
