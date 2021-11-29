@@ -158,5 +158,11 @@ class Resort extends Model
         // duyệt array, insert từng object vô 
     }
 
-    
+    public function indexChiNhanh() {
+        return DB::select("call indexChiNhanh");
+    }
+
+    public function statisticCustomer($branch, $year) {
+        return DB::select("CALL ThongKeLuotKhach(".$branch.", ".$year.")");
+    }
 }

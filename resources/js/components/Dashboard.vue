@@ -42,14 +42,14 @@
                         <img src=".../../../public/images/warehouse/person.svg" alt=""  width="40px">
                     </button>
                     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <a class="dropdown-item" href="#">{{user_account.username}}</a>
+                        <a class="dropdown-item" href="#" style="font-weight: bold;">sManager</a>
                         <!-- <a class="dropdown-item" href="http://127.0.0.1:8000/">Logout</a> -->
-                        <a class="dropdown-item" href="http://127.0.0.1:8000/" @click.prevent="handleLogout">Logout</a>
+                        <a class="dropdown-item" href="http://127.0.0.1:8000/" @click.prevent="handleLogout">Đăng xuất</a>
                     </div>
                 </div>
 
 
-                <form id="logout-form" action="/logout" method="POST" style="display: none;">
+                <form id="logout-form" action="/admin/logout" method="POST" style="display: none;">
                     <input type="hidden" name="_token" :value="csrf">
                 </form>
 

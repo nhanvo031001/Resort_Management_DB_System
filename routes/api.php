@@ -45,14 +45,14 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 
 
 // DBMS
-Route::get('loaiPhongAll', 'ResortController@index');  // lấy tất cả loại phòng         // done proc
-Route::get('loaiPhong/{id}', 'ResortController@show');            // tìm loại phòng theo ID     // done proc
-Route::post('loaiPhong', 'ResortController@store');     // thêm loại phòng
-//Route::delete('loaiPhong/{id}', 'ResortController@destroy');  // xóa loại phòng
+// Route::get('loaiPhongAll', 'ResortController@index')->middleware('admin.auth');  // lấy tất cả loại phòng         // done proc
+// Route::get('loaiPhong/{id}', 'ResortController@show')->middleware('admin.auth');            // tìm loại phòng theo ID     // done proc
+// Route::post('loaiPhong', 'ResortController@store')->middleware('admin.auth');     // thêm loại phòng
+// //Route::delete('loaiPhong/{id}', 'ResortController@destroy');  // xóa loại phòng
 
 
-Route::get('khachHangAll', 'ResortController@indexKhachHang');  // lấy tất cả khách hàng        // done proc
-Route::get('khachHang/{id}', 'ResortController@showKhachHang');   // lấy khách hàng theo id     // done proc
-Route::get('maDatPhong/{id}', 'ResortController@showMaDatPhong');   // lấy mã đặt phòng theo ID khách hàng      // done proc
+// Route::get('khachHangAll', 'ResortController@indexKhachHang')->middleware('admin.auth');  // lấy tất cả khách hàng        // done proc
+// Route::get('khachHang/{id}', 'ResortController@showKhachHang')->middleware('admin.auth');   // lấy khách hàng theo id     // done proc
+// Route::get('maDatPhong/{id}', 'ResortController@showMaDatPhong')->middleware('admin.auth');   // lấy mã đặt phòng theo ID khách hàng      // done proc
 
-Route::get('vatTuAll', 'ResortController@indexVatTu');      // lấy all vật tư       // done proc
+// Route::get('vatTuAll', 'ResortController@indexVatTu')->middleware('admin.auth');      // lấy all vật tư       // done proc
