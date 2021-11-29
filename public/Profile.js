@@ -324,6 +324,53 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 // import updateBook from './UpdateBook.vue'
 // import bookInfo from './BookInfo.vue'
 
@@ -358,6 +405,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vue2_datepicker_index_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(vue2_datepicker_index_css__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var sweetalert__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! sweetalert */ "./node_modules/sweetalert/dist/sweetalert.min.js");
 /* harmony import */ var sweetalert__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(sweetalert__WEBPACK_IMPORTED_MODULE_2__);
+//
+//
+//
+//
 //
 //
 //
@@ -562,7 +613,7 @@ __webpack_require__.r(__webpack_exports__);
           var tempobj = {
             ma_loai_vat_tu: obj.ma_loai_vat_tu,
             ten_loai_vat_tu: obj.ten_loai_vat_tu,
-            so_luong: 1
+            so_luong: 0
           }; //console.log(tempobj)
 
           _this.tempArr.push(tempobj);
@@ -615,7 +666,7 @@ __webpack_require__.r(__webpack_exports__);
         var idx = 0;
 
         for (; idx < _this2.tempArr.length; idx++) {
-          _this2.tempArr[idx].so_luong = 1;
+          _this2.tempArr[idx].so_luong = 0;
         }
       })["catch"](function (error) {
         console.log(error.response);
@@ -648,7 +699,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\n.header-additems {\n    margin-top: 30px;\n    font-weight: bold;\n    font-size: 30px;\n}\n.select-language {\n    width: 210px;\n    height: 30px;\n    border: 2px solid #D8DBE0;\n    border-radius: 3px;\n}\n.select-category {\n    width: 684px;\n    height: 30px;\n    border: 2px solid #D8DBE0;\n    border-radius: 3px;\n}\n.filling-all-info {\n    margin-top: 40px;\n}\n.one-row-field {\n    margin-top: 15px;\n}\n.row-input {\n    border: 2px solid #D8DBE0;\n    border-radius: 3px;\n}\n.field-name-left {\n    padding-left: 115px;\n    color: #0084B4;\n    font-size: 18px;\n    font-weight: bold;\n}\n.field-name-right {\n    color: #0084B4;\n    font-size: 18px;\n    font-weight: bold;\n    padding-left: 0px;\n}\n.red-star {\n    color: red;\n}\n.field-right {\n    padding-left: 12px;\n}\n.text-area {\n    margin-left: 3px;\n}\n.button-below {\n    margin-top: 20px;\n    margin-bottom: 30px;\n    width: 300px;\n}\n.cancle {\n    background-color: #EEEEEE;\n    border: none ;\n    border-radius: 5px;\n    color: #616161;\n    font-size: 20px;\n    padding: 0.25rem 1.5rem;\n    margin-right: 30px;\n}\n.cancle:hover {\n    background-color: #d0d6d6;\n}\n.cancle:focus {\n    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);\n}\n.addbook {\n    /* margin-left: 290px; */\n    background-color: #00ACED;\n    border: none ;\n    color: white;\n    font-size: 20px;\n    padding: 0.25rem 1.5rem;\n    border-radius: 5px;\n    margin-right: 140px;\n}\n.addbook:hover {\n    background-color: #0084B4;\n}\n.addbook:focus {\n    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);\n}\n.input-group {\n    width: 83%;\n}\n.custom-file-label {\n    border: 2px solid #D8DBE0;\n    border-radius: 3px;\n}\n#custom-file-label {\n    border: 2px solid #D8DBE0;\n    border-radius: 3px;\n}\n.custom-file-input {\n    opacity: 1;\n    padding-top: 3px;\n    width: 600px;\n}\n#upload-button {\n    border-radius: 3px;\n}\n\n\n\n\n/* danh sach loai phong */\n.searchKH {\n    margin-top: 10px;\n    margin-bottom: 60px;\n}\n.search-icon {\n}\n.search-typing {\n    border: 2px solid #D8DBE0;\n    border-radius: 3px;\n    text-indent: 30px;\n    /* background: url(../assets/hcmut1.png) no-repeat;\n    background-size: 10px 10px; */\n    background: url(" + escape(__webpack_require__(/*! ../../../public/images/warehouse/search-icon.png */ "./public/images/warehouse/search-icon.png")) + ") no-repeat scroll 5px 5px; \n    background-size: 15px 15px;\n}\n::-moz-placeholder {\n    color: rgb(196, 189, 189);\n}\n:-ms-input-placeholder {\n    color: rgb(196, 189, 189);\n}\n::placeholder {\n    color: rgb(196, 189, 189);\n}\n\n\n", ""]);
+exports.push([module.i, "\n.header-additems {\r\n    margin-top: 30px;\r\n    font-weight: bold;\r\n    font-size: 30px;\n}\n.select-language {\r\n    width: 210px;\r\n    height: 30px;\r\n    border: 2px solid #D8DBE0;\r\n    border-radius: 3px;\n}\n.select-category {\r\n    width: 684px;\r\n    height: 30px;\r\n    border: 2px solid #D8DBE0;\r\n    border-radius: 3px;\n}\n.filling-all-info {\r\n    margin-top: 40px;\n}\n.one-row-field {\r\n    margin-top: 15px;\n}\n.row-input {\r\n    border: 2px solid #D8DBE0;\r\n    border-radius: 3px;\n}\n.field-name-left {\r\n    padding-left: 115px;\r\n    color: #0084B4;\r\n    font-size: 18px;\r\n    font-weight: bold;\n}\n.field-name-right {\r\n    color: #0084B4;\r\n    font-size: 18px;\r\n    font-weight: bold;\r\n    padding-left: 0px;\n}\n.red-star {\r\n    color: red;\n}\n.field-right {\r\n    padding-left: 12px;\n}\n.text-area {\r\n    margin-left: 3px;\n}\n.button-below {\r\n    margin-top: 20px;\r\n    margin-bottom: 30px;\r\n    width: 300px;\n}\n.cancle {\r\n    background-color: #EEEEEE;\r\n    border: none ;\r\n    border-radius: 5px;\r\n    color: #616161;\r\n    font-size: 20px;\r\n    padding: 0.25rem 1.5rem;\r\n    margin-right: 30px;\n}\n.cancle:hover {\r\n    background-color: #d0d6d6;\n}\n.cancle:focus {\r\n    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);\n}\n.addbook {\r\n    /* margin-left: 290px; */\r\n    background-color: #00ACED;\r\n    border: none ;\r\n    color: white;\r\n    font-size: 20px;\r\n    padding: 0.25rem 1.5rem;\r\n    border-radius: 5px;\r\n    margin-right: 140px;\n}\n.addbook:hover {\r\n    background-color: #0084B4;\n}\n.addbook:focus {\r\n    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);\n}\n.input-group {\r\n    width: 83%;\n}\n.custom-file-label {\r\n    border: 2px solid #D8DBE0;\r\n    border-radius: 3px;\n}\n#custom-file-label {\r\n    border: 2px solid #D8DBE0;\r\n    border-radius: 3px;\n}\n.custom-file-input {\r\n    opacity: 1;\r\n    padding-top: 3px;\r\n    width: 600px;\n}\n#upload-button {\r\n    border-radius: 3px;\n}\r\n\r\n\r\n\r\n\r\n/* danh sach loai phong */\n.searchKH {\r\n    margin-top: 10px;\r\n    margin-bottom: 60px;\n}\n.search-icon {\n}\n.search-typing {\r\n    border: 2px solid #D8DBE0;\r\n    border-radius: 3px;\r\n    text-indent: 30px;\r\n    /* background: url(../assets/hcmut1.png) no-repeat;\r\n    background-size: 10px 10px; */\r\n    background: url(" + escape(__webpack_require__(/*! ../../../public/images/warehouse/search-icon.png */ "./public/images/warehouse/search-icon.png")) + ") no-repeat scroll 5px 5px; \r\n    background-size: 15px 15px;\n}\n::-moz-placeholder {\r\n    color: rgb(196, 189, 189);\n}\n:-ms-input-placeholder {\r\n    color: rgb(196, 189, 189);\n}\n::placeholder {\r\n    color: rgb(196, 189, 189);\n}\r\n\r\n\r\n", ""]);
 
 // exports
 
@@ -667,7 +718,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\n.button-below-dondatphong {\n    margin-top: 20px;\n    margin-bottom: 30px;\n}\n.done {\n    /* margin-left: 290px; */\n    background-color: #00ACED;\n    border: none ;\n    color: white;\n    font-size: 20px;\n    padding: 0.25rem 1.5rem;\n    border-radius: 5px;\n    margin-right: 140px;\n}\n.list-don {\n    margin-top: 30px;\n}\n.header-don-dat-phong {\n    margin-top: 30px;\n    font-weight: bold;\n    font-size: 30px;\n}\n\n", ""]);
+exports.push([module.i, "\n.button-below-dondatphong {\r\n    margin-top: 20px;\r\n    margin-bottom: 30px;\n}\n.done {\r\n    /* margin-left: 290px; */\r\n    background-color: #00ACED;\r\n    border: none ;\r\n    color: white;\r\n    font-size: 20px;\r\n    padding: 0.25rem 1.5rem;\r\n    border-radius: 5px;\r\n    margin-right: 140px;\n}\n.list-don {\r\n    margin-top: 30px;\n}\n.header-don-dat-phong {\r\n    margin-top: 30px;\r\n    font-weight: bold;\r\n    font-size: 30px;\n}\r\n\r\n", ""]);
 
 // exports
 
@@ -686,7 +737,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\n.header-detail-thong-tin-KH {\n    margin-top: 30px;\n    font-weight: bold;\n    font-size: 30px;\n}\n.filling-all-info {\n    margin-top: 40px;\n}\n.one-row-field {\n    margin-top: 15px;\n}\n.row-input {\n    border: 2px solid #D8DBE0;\n    border-radius: 3px;\n}\n.field-name-left {\n    padding-left: 115px;\n    color: #0084B4;\n    font-size: 18px;\n    font-weight: bold;\n}\n.field-name-right {\n    color: #0084B4;\n    font-size: 18px;\n    font-weight: bold;\n    padding-left: 0px;\n}\n.red-star {\n    color: red;\n}\n.field-right {\n    padding-left: 12px;\n}\n.text-area {\n    margin-left: 3px;\n}\n.button-below-info-KH {\n    margin-top: 20px;\n    margin-bottom: 30px;\n}\n.cancle-detailed {\n    background-color: #EEEEEE;\n    border: none ;\n    border-radius: 5px;\n    color: #616161;\n    font-size: 20px;\n    padding: 0.25rem 1.5rem;\n    margin-right: 30px;\n}\n.cancle-detailed:hover {\n    background-color: #d0d6d6;\n}\n.cancle-detailed:focus {\n    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);\n}\n.done {\n    /* margin-left: 290px; */\n    background-color: #00ACED;\n    border: none ;\n    color: white;\n    font-size: 20px;\n    padding: 0.25rem 1.5rem;\n    border-radius: 5px;\n    margin-right: 140px;\n}\n.done:hover {\n    background-color: #0084B4;\n}\n.done:focus {\n    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);\n}\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n.header-detail-thong-tin-KH {\r\n    margin-top: 30px;\r\n    font-weight: bold;\r\n    font-size: 30px;\n}\n.filling-all-info {\r\n    margin-top: 40px;\n}\n.one-row-field {\r\n    margin-top: 15px;\n}\n.row-input {\r\n    border: 2px solid #D8DBE0;\r\n    border-radius: 3px;\n}\n.field-name-left {\r\n    padding-left: 115px;\r\n    color: #0084B4;\r\n    font-size: 18px;\r\n    font-weight: bold;\n}\n.field-name-right {\r\n    color: #0084B4;\r\n    font-size: 18px;\r\n    font-weight: bold;\r\n    padding-left: 0px;\n}\n.red-star {\r\n    color: red;\n}\n.field-right {\r\n    padding-left: 12px;\n}\n.text-area {\r\n    margin-left: 3px;\n}\n.button-below-info-KH {\r\n    margin-top: 20px;\r\n    margin-bottom: 30px;\n}\n.cancle-detailed {\r\n    background-color: #EEEEEE;\r\n    border: none ;\r\n    border-radius: 5px;\r\n    color: #616161;\r\n    font-size: 20px;\r\n    padding: 0.25rem 1.5rem;\r\n    margin-right: 30px;\n}\n.cancle-detailed:hover {\r\n    background-color: #d0d6d6;\n}\n.cancle-detailed:focus {\r\n    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);\n}\n.done {\r\n    /* margin-left: 290px; */\r\n    background-color: #00ACED;\r\n    border: none ;\r\n    color: white;\r\n    font-size: 20px;\r\n    padding: 0.25rem 1.5rem;\r\n    border-radius: 5px;\r\n    margin-right: 140px;\n}\n.done:hover {\r\n    background-color: #0084B4;\n}\n.done:focus {\r\n    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);\n}\r\n\r\n\r\n\r\n\r\n\r\n\r\n", ""]);
 
 // exports
 
@@ -705,7 +756,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\n.xem-thong-tin {\n    margin-right: 20px;\n}\n\n\n\n", ""]);
+exports.push([module.i, "\n.xem-thong-tin {\r\n    margin-right: 20px;\n}\r\n\r\n\r\n\r\n", ""]);
 
 // exports
 
@@ -724,7 +775,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\n.header-additems {\n    margin-top: 30px;\n    font-weight: bold;\n    font-size: 30px;\n}\n.select-language {\n    width: 210px;\n    height: 30px;\n    border: 2px solid #D8DBE0;\n    border-radius: 3px;\n}\n.select-category {\n    width: 684px;\n    height: 30px;\n    border: 2px solid #D8DBE0;\n    border-radius: 3px;\n}\n.filling-all-info {\n    margin-top: 40px;\n}\n.one-row-field {\n    margin-top: 15px;\n}\n.row-input {\n    border: 2px solid #D8DBE0;\n    border-radius: 3px;\n}\n.field-name-left {\n    padding-left: 115px;\n    color: #0084B4;\n    font-size: 18px;\n    font-weight: bold;\n}\n.field-name-right {\n    color: #0084B4;\n    font-size: 18px;\n    font-weight: bold;\n    padding-left: 0px;\n}\n.red-star {\n    color: red;\n}\n.field-right {\n    padding-left: 12px;\n}\n.text-area {\n    margin-left: 3px;\n}\n.button-below-them {\n    margin-top: 20px;\n    margin-bottom: 30px;\n}\n.cancle {\n    background-color: #EEEEEE;\n    border: none ;\n    border-radius: 5px;\n    color: #616161;\n    font-size: 20px;\n    padding: 0.25rem 1.5rem;\n    margin-right: 30px;\n}\n.cancle:hover {\n    background-color: #d0d6d6;\n}\n.cancle:focus {\n    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);\n}\n.addbook {\n    /* margin-left: 290px; */\n    background-color: #00ACED;\n    border: none ;\n    color: white;\n    font-size: 20px;\n    padding: 0.25rem 1.5rem;\n    border-radius: 5px;\n    margin-right: 140px;\n}\n.addbook:hover {\n    background-color: #0084B4;\n}\n.addbook:focus {\n    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);\n}\n.input-group {\n    width: 83%;\n}\n.custom-file-label {\n    border: 2px solid #D8DBE0;\n    border-radius: 3px;\n}\n#custom-file-label {\n    border: 2px solid #D8DBE0;\n    border-radius: 3px;\n}\n.custom-file-input {\n    opacity: 1;\n    padding-top: 3px;\n    width: 600px;\n}\n#upload-button {\n    border-radius: 3px;\n}\n.giuong-vat-tu {\n    margin-bottom: 40px;\n    margin-right: 140px;\n}\n.giuong {\n    margin-right: 0px;\n}\n.vat-tu-input {\n     border: 2px solid #D8DBE0;\n    border-radius: 3px;\n}\n.amount {\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  flex-direction: row;\n}\n.plus {\n    background-color: #52ca52;\n    color: white;\n    /* margin-right: 80px; */\n}\n\n/* .plus:hover {\n    border: 3px solid #0062cc;\n    border-radius: 3px;\n} */\n.plus:hover {\n    border: 3px solid rgba(0, 123, 255, 0.5);\n    border-radius: 3px;\n}\n.plus:focus {\n    border: 3px solid rgba(0, 123, 255, 0.5);\n    border-radius: 3px;\n    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);\n}\n.minus {\n    background-color: #fc4e4e;\n    color: white;\n}\n\n/* .minus:hover {\n    border: 2px solid yellow;\n} */\n.minus:hover {\n    border: 3px solid rgba(0, 123, 255, 0.5);\n    border-radius: 3px;\n}\n.minus:focus {\n    border: 3px solid rgba(0, 123, 255, 0.5);\n    border-radius: 3px;\n    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);\n}\n.so-luong-vat-tu{\n    text-align: center;\n     border: 2px solid #D8DBE0;\n    border-radius: 3px;\n}\n.ten-vat-tu {\n    font-size: 19px;\n}\n.so-luong {\n    font-size: 19px;\n}\n.item-ten-vat-tu {\n    font-size: 18px;\n}\n\n\n", ""]);
+exports.push([module.i, "\n.header-additems {\r\n    margin-top: 30px;\r\n    font-weight: bold;\r\n    font-size: 30px;\n}\n.select-language {\r\n    width: 210px;\r\n    height: 30px;\r\n    border: 2px solid #D8DBE0;\r\n    border-radius: 3px;\n}\n.select-category {\r\n    width: 684px;\r\n    height: 30px;\r\n    border: 2px solid #D8DBE0;\r\n    border-radius: 3px;\n}\n.filling-all-info {\r\n    margin-top: 40px;\n}\n.one-row-field {\r\n    margin-top: 15px;\n}\n.row-input {\r\n    border: 2px solid #D8DBE0;\r\n    border-radius: 3px;\n}\n.field-name-left {\r\n    padding-left: 115px;\r\n    color: #0084B4;\r\n    font-size: 18px;\r\n    font-weight: bold;\n}\n.field-name-right {\r\n    color: #0084B4;\r\n    font-size: 18px;\r\n    font-weight: bold;\r\n    padding-left: 0px;\n}\n.red-star {\r\n    color: red;\n}\n.field-right {\r\n    padding-left: 12px;\n}\n.text-area {\r\n    margin-left: 3px;\n}\n.button-below-them {\r\n    margin-top: 20px;\r\n    margin-bottom: 30px;\n}\n.cancle {\r\n    background-color: #EEEEEE;\r\n    border: none ;\r\n    border-radius: 5px;\r\n    color: #616161;\r\n    font-size: 20px;\r\n    padding: 0.25rem 1.5rem;\r\n    margin-right: 30px;\n}\n.cancle:hover {\r\n    background-color: #d0d6d6;\n}\n.cancle:focus {\r\n    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);\n}\n.addbook {\r\n    /* margin-left: 290px; */\r\n    background-color: #00ACED;\r\n    border: none ;\r\n    color: white;\r\n    font-size: 20px;\r\n    padding: 0.25rem 1.5rem;\r\n    border-radius: 5px;\r\n    margin-right: 140px;\n}\n.addbook:hover {\r\n    background-color: #0084B4;\n}\n.addbook:focus {\r\n    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);\n}\n.input-group {\r\n    width: 83%;\n}\n.custom-file-label {\r\n    border: 2px solid #D8DBE0;\r\n    border-radius: 3px;\n}\n#custom-file-label {\r\n    border: 2px solid #D8DBE0;\r\n    border-radius: 3px;\n}\n.custom-file-input {\r\n    opacity: 1;\r\n    padding-top: 3px;\r\n    width: 600px;\n}\n#upload-button {\r\n    border-radius: 3px;\n}\n.giuong-vat-tu {\r\n    margin-bottom: 40px;\r\n    margin-right: 140px;\n}\n.giuong {\r\n    margin-right: 0px;\n}\n.vat-tu-input {\r\n     border: 2px solid #D8DBE0;\r\n    border-radius: 3px;\n}\n.amount {\r\n  display: flex;\r\n  align-items: center;\r\n  justify-content: center;\r\n  flex-direction: row;\n}\n.plus {\r\n    background-color: #52ca52;\r\n    color: white;\r\n    /* margin-right: 80px; */\n}\r\n\r\n/* .plus:hover {\r\n    border: 3px solid #0062cc;\r\n    border-radius: 3px;\r\n} */\n.plus:hover {\r\n    border: 3px solid rgba(0, 123, 255, 0.5);\r\n    border-radius: 3px;\n}\n.plus:focus {\r\n    border: 3px solid rgba(0, 123, 255, 0.5);\r\n    border-radius: 3px;\r\n    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);\n}\n.minus {\r\n    background-color: #fc4e4e;\r\n    color: white;\n}\r\n\r\n/* .minus:hover {\r\n    border: 2px solid yellow;\r\n} */\n.minus:hover {\r\n    border: 3px solid rgba(0, 123, 255, 0.5);\r\n    border-radius: 3px;\n}\n.minus:focus {\r\n    border: 3px solid rgba(0, 123, 255, 0.5);\r\n    border-radius: 3px;\r\n    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);\n}\n.so-luong-vat-tu{\r\n    text-align: center;\r\n     border: 2px solid #D8DBE0;\r\n    border-radius: 3px;\n}\n.ten-vat-tu {\r\n    font-size: 19px;\n}\n.so-luong {\r\n    font-size: 19px;\n}\n.item-ten-vat-tu {\r\n    font-size: 18px;\n}\r\n\r\n\r\n", ""]);
 
 // exports
 
@@ -1383,31 +1434,17 @@ var render = function() {
               _vm._v(" "),
               _c("td", [_vm._v(" " + _vm._s(item.dien_thoai) + " ")]),
               _vm._v(" "),
+              _c("td", [_vm._v(" " + _vm._s(item.email) + " ")]),
+              _vm._v(" "),
+              _c("td", [_vm._v(" " + _vm._s(item.username) + " ")]),
+              _vm._v(" "),
+              _c("td", [_vm._v(" " + _vm._s(item.diem) + " ")]),
+              _vm._v(" "),
+              _c("td", [_vm._v(" " + _vm._s(item.loai) + " ")]),
+              _vm._v(" "),
               _c(
                 "td",
                 [
-                  _c(
-                    "router-link",
-                    {
-                      attrs: {
-                        to: {
-                          name: "khachHangInfo",
-                          params: { khachHangID: item.ma_khach_hang }
-                        }
-                      }
-                    },
-                    [
-                      _c(
-                        "button",
-                        {
-                          staticClass: "btn btn-primary xem-thong-tin",
-                          attrs: { type: "button" }
-                        },
-                        [_vm._v("Xem thông tin")]
-                      )
-                    ]
-                  ),
-                  _vm._v(" "),
                   _c(
                     "router-link",
                     {
@@ -1447,15 +1484,23 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c("thead", [
       _c("tr", [
-        _c("th", { staticClass: "col-2" }, [_vm._v("Mã khách hàng")]),
+        _c("th", { staticClass: "col-1" }, [_vm._v("Mã khách hàng")]),
         _vm._v(" "),
-        _c("th", { staticClass: "col-2" }, [_vm._v("CCCD/CMND")]),
+        _c("th", { staticClass: "col-1" }, [_vm._v("CCCD/CMND")]),
         _vm._v(" "),
-        _c("th", { staticClass: "col-3" }, [_vm._v("Họ tên")]),
+        _c("th", { staticClass: "col-2" }, [_vm._v("Họ tên")]),
         _vm._v(" "),
         _c("th", { staticClass: "col-1" }, [_vm._v("Điện thoại")]),
         _vm._v(" "),
-        _c("th", { staticClass: "col-4" })
+        _c("th", { staticClass: "col-2" }, [_vm._v("Email")]),
+        _vm._v(" "),
+        _c("th", { staticClass: "col-1" }, [_vm._v("Username")]),
+        _vm._v(" "),
+        _c("th", { staticClass: "col-1" }, [_vm._v("Điểm")]),
+        _vm._v(" "),
+        _c("th", { staticClass: "col-1" }, [_vm._v("Loại")]),
+        _vm._v(" "),
+        _c("th", { staticClass: "col-" })
       ])
     ])
   }
@@ -1621,7 +1666,7 @@ var render = function() {
                   _c(
                     "svg",
                     {
-                      staticClass: "bi bi-plus-square plus",
+                      staticClass: "bi bi-dash-square minus",
                       attrs: {
                         xmlns: "http://www.w3.org/2000/svg",
                         width: "33",
@@ -1631,7 +1676,7 @@ var render = function() {
                       },
                       on: {
                         click: function($event) {
-                          return _vm.changeAmount(item.ma_loai_vat_tu, 1)
+                          return _vm.changeAmount(item.ma_loai_vat_tu, -1)
                         }
                       }
                     },
@@ -1646,7 +1691,7 @@ var render = function() {
                       _c("path", {
                         attrs: {
                           d:
-                            "M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"
+                            "M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z"
                         }
                       })
                     ]
@@ -1677,7 +1722,7 @@ var render = function() {
                   _c(
                     "svg",
                     {
-                      staticClass: "bi bi-dash-square minus",
+                      staticClass: "bi bi-plus-square plus",
                       attrs: {
                         xmlns: "http://www.w3.org/2000/svg",
                         width: "33",
@@ -1687,7 +1732,7 @@ var render = function() {
                       },
                       on: {
                         click: function($event) {
-                          return _vm.changeAmount(item.ma_loai_vat_tu, -1)
+                          return _vm.changeAmount(item.ma_loai_vat_tu, 1)
                         }
                       }
                     },
@@ -1702,7 +1747,7 @@ var render = function() {
                       _c("path", {
                         attrs: {
                           d:
-                            "M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z"
+                            "M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"
                         }
                       })
                     ]

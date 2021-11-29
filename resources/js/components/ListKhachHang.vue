@@ -1,7 +1,7 @@
 <template>
   <div>
 
-    <table class="table table-striped list-book">
+    <!-- <table class="table table-striped list-book">
             <thead>
                 <tr>
                     <th class="col-2">Mã khách hàng</th>
@@ -24,6 +24,53 @@
                         <router-link :to="{name: 'khachHangInfo', params: {khachHangID: item.ma_khach_hang}}"> 
                             <button type="button" class="btn btn-primary xem-thong-tin">Xem thông tin</button>
                         </router-link>
+
+                        <router-link :to="{name: 'donDatPhong', params: {khachHangID: item.ma_khach_hang}}"> 
+                        <button type="button" class="btn btn-success">Xem đơn đặt phòng</button>
+                        </router-link>
+                      
+                    </td>
+                </tr>
+
+
+            </tbody>
+        </table> -->
+
+
+
+
+
+        <table class="table table-striped list-book">
+            <thead>
+                <tr>
+                    <th class="col-1">Mã khách hàng</th>
+                    <th class="col-1">CCCD/CMND</th>
+                    <th class="col-2">Họ tên</th>
+                    <th class="col-1">Điện thoại</th>
+                    <th class="col-2">Email</th>
+                    <th class="col-1">Username</th>
+                    <th class="col-1">Điểm</th>
+                    <th class="col-1">Loại</th>
+                    <th class="col-"></th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr v-for="item in resultQuery" :key="item.ma_khach_hang" v-on:orderchanged="getList()">
+                    <td >{{item.ma_khach_hang}} </td>
+                    <td > {{item.cccd_cmnd}} </td>
+                    <td > {{item.ho_ten}} </td>
+                    <td > {{item.dien_thoai}} </td>
+                    <td > {{item.email}} </td>
+                    <td > {{item.username}} </td>
+                    <td > {{item.diem}} </td>
+                    <td > {{item.loai}} </td>
+                    <td  >
+                    
+
+                        <!-- <router-link :to="{name: 'khachHangInfo', params: {khachHangID: item.ma_khach_hang}}"> 
+                            <button type="button" class="btn btn-primary xem-thong-tin">Xem thông tin</button>
+                        </router-link> -->
 
                         <router-link :to="{name: 'donDatPhong', params: {khachHangID: item.ma_khach_hang}}"> 
                         <button type="button" class="btn btn-success">Xem đơn đặt phòng</button>
